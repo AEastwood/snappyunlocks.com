@@ -1,0 +1,194 @@
+{
+  "countries": [
+    {
+      "name": "Argentina",
+      "flag": {
+        "icon": "🇦🇷"
+      },
+      "currency": {
+        "code": "ARS",
+        "name": "Argentine Peso",
+        "symbol": "$"
+      },
+      "locale": "es-AR",
+      "metadata": {
+        "population": 45376763,
+        "area": 2780400,
+        "capital": "Buenos Aires",
+        "region": "South America",
+        "time_zone": "UTC-3"
+      }
+    },
+    {
+      "name": "Australia",
+      "flag": {
+        "icon": "🇦🇺"
+      },
+      "currency": {
+        "code": "AUD",
+        "name": "Australian Dollar",
+        "symbol": "$"
+      },
+      "locale": "en-AU",
+      "metadata": {
+        "population": 25939844,
+        "area": 7692024,
+        "capital": "Canberra",
+        "region": "Oceania",
+        "time_zone": "UTC+10"
+      }
+    },
+    {
+      "name": "Brazil",
+      "flag": {
+        "icon": "🇧🇷"
+      },
+      "currency": {
+        "code": "BRL",
+        "name": "Brazilian Real",
+        "symbol": "R$"
+      },
+      "locale": "pt-BR",
+      "metadata": {
+        "population": 216303141,
+        "area": 8515767,
+        "capital": "Brasília",
+        "region": "South America",
+        "time_zone": "UTC-3"
+      }
+    },
+    {
+      "name": "Canada",
+      "flag": {
+        "icon": "🇨🇦"
+      },
+      "currency": {
+        "code": "CAD",
+        "name": "Canadian Dollar",
+        "symbol": "$"
+      },
+      "locale": "en-CA",
+      "metadata": {
+        "population": 38131104,
+        "area": 9984670,
+        "capital": "Ottawa",
+        "region": "North America",
+        "time_zone": "UTC-5 to UTC-8"
+      }
+    },
+    {
+      "name": "Chile",
+      "flag": {
+        "icon": "🇨🇱"
+      },
+      "currency": {
+        "code": "CLP",
+        "name": "Chilean Peso",
+        "symbol": "$"
+      },
+      "locale": "es-CL",
+      "metadata": {
+        "population": 19212362,
+        "area": 756102,
+        "capital": "Santiago",
+        "region": "South America",
+        "time_zone": "UTC-4"
+      }
+    },
+    {
+      "name": "Colombia",
+      "flag": {
+        "icon": "🇨🇴"
+      },
+      "currency": {
+        "code": "COP",
+        "name": "Colombian Peso",
+        "symbol": "$"
+      },
+      "locale": "es-CO",
+      "metadata": {
+        "population": 52215519,
+        "area": 1141748,
+        "capital": "Bogotá",
+        "region": "South America",
+        "time_zone": "UTC-5"
+      }
+    },
+    {
+      "name": "Dominican Republic",
+      "flag": {
+        "icon": "🇩🇴"
+      },
+      "currency": {
+        "code": "DOP",
+        "name": "Dominican Peso",
+        "symbol": "RD$"
+      },
+      "locale": "es-DO",
+      "metadata": {
+        "population": 11121179,
+        "area": 48671,
+        "capital": "Santo Domingo",
+        "region": "Caribbean",
+        "time_zone": "UTC-4"
+      }
+    },
+    {
+      "name": "France",
+      "flag": {
+        "icon": "🇫🇷"
+      },
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      },
+      "locale": "fr-FR",
+      "metadata": {
+        "population": 67753302,
+        "area": 551695,
+        "capital": "Paris",
+        "region": "Europe",
+        "time_zone": "UTC+1"
+      }
+    },
+    {
+      "name": "Germany",
+      "flag": {
+        "icon": "🇩🇪"
+      },
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      },
+      "locale": "de-DE",
+      "metadata": {
+        "population": 84379635,
+        "area": 357022,
+        "capital": "Berlin",
+        "region": "Europe",
+        "time_zone": "UTC+1"
+      }
+    },
+    {
+      "name": "United States",
+      "flag": {
+        "icon": "🇺🇸"
+      },
+      "currency": {
+        "code": "USD",
+        "name": "United States Dollar",
+        "symbol": "$"
+      },
+      "locale": "en-US",
+      "metadata": {
+        "population": 335942003,
+        "area": 9833520,
+        "capital": "Washington, D.C.",
+        "region": "North America",
+        "time_zone": "UTC-5 to UTC-10"
+      }
+    }
+  ]
+}
