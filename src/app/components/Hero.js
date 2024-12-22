@@ -17,11 +17,11 @@ function Hero() {
 
             <div className="flex flex-col gap-4 w-full lg:w-3/5 px-12 lg:px-0 lg:pr-24 my-auto">
                 <div className="w-full space-y-4 text-white mt-auto text-sm">
-                    <div className="flex flex-row gap-2">
-                        <p className="text-lg font-bold w-1/2">
+                    <div className="flex flex-col lg:flex-row gap-4">
+                        <p className="text-lg font-bold w-full lg:w-1/2 text-center lg:text-left">
                             Unlock Your Phone In a Snap!
                         </p>
-                        <div className="text-sm w-1/2 text-right text-yellow-400 flex items-center justify-end">
+                        <div className="text-sm w-full lg:w-1/2 lg:text-right text-yellow-400 flex items-center justify-center lg:justify-end">
                             <span className="text-yellow-400 text-lg">
                                 &#9733; &#9733; &#9733; &#9733; &#9734;
                             </span>

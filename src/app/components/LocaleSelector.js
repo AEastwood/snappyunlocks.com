@@ -8,63 +8,63 @@ function LocaleSelector() {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
-    // Close the dropdown if user clicks outside
+    // This function updates the locale storage with the selected country and locale.
+    const updateLocaleStorage = (country) => {
+        localStorage.setItem("country", country.name);
+        localStorage.setItem("locale", country.locale);
+    };
+
+    // This function closes the dropdown if the user clicks outside of it.
     const handleClickOutside = (event) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
             setIsOpen(false);
         }
     };
 
-    // Close the dropdown on Escape
+    // This function closes the dropdown if the user presses the Escape key.
     const handleEscape = (event) => {
         if (event.key === "Escape") {
             setIsOpen(false);
         }
     };
 
+    // Handles country selection and updates locale storage.
+    const handleSelection = (country) => {
+        setSelectedLocale(country.name);
+        updateLocaleStorage(country);
+        setIsOpen(false);
+    };
+
     useEffect(() => {
-        if (storedLocale) {
+        const initializeLocale = () => {
             const matchedCountry = countries.find(
                 (country) => country.locale === storedLocale
-            );
-            if (matchedCountry) {
-                setSelectedLocale(matchedCountry.name);
-            }
-        }
+            ) || defaultCountry;
+            setSelectedLocale(matchedCountry.name);
+            updateLocaleStorage(matchedCountry);
+        };
 
+        initializeLocale();
         document.addEventListener("mousedown", handleClickOutside);
         document.addEventListener("keydown", handleEscape);
-
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
             document.removeEventListener("keydown", handleEscape);
         };
     }, [storedLocale]);
 
-
-    // Handle a new selection
-    const handleSelection = (country) => {
-        setSelectedLocale(country.name);
-        localStorage.setItem("country", country.name);
-        localStorage.setItem("locale", country.locale);
-        setIsOpen(false);
-    };
-
     return (
         <div className="relative inline-block" ref={dropdownRef}>
-            {/* Dropdown Button */}
             <button
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(prev => !prev)}
                 className="flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:outline-none transition-all"
             >
                 <span className="mr-2 font-medium text-lg text-gray-800">
                     <img className='w-4' src={countries.find((country) => country.name === selectedLocale)?.flag.icon || defaultCountry.flag.icon} />
                 </span>
-                
                 <span className="text-sm font-semibold text-gray-800">
                     {selectedLocale}
                 </span>
-
                 <svg
                     className="w-4 h-4 ml-2 text-gray-800"
                     xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,6 @@ function LocaleSelector() {
                 </svg>
             </button>
 
-            {/* Dropdown Menu */}
             {isOpen && (
                 <div className="absolute right-0 mt-2 bg-white text-gray-900 rounded-lg border border-gray-300 w-auto">
                     <ul className="max-h-[250px] overflow-y-scroll">
@@ -91,7 +90,7 @@ function LocaleSelector() {
                                 title={country.name}
                             >
                                 <span className="font-medium text-gray-800">
-                                    <img className="w-4" src={country.flag.icon}/>
+                                    <img className="w-4" src={country.flag.icon} />
                                 </span>
                                 <span className="text-sm font-semibold text-gray-800 whitespace-nowrap">
                                     {country.name}
