@@ -1,11 +1,11 @@
 import React from 'react';
 
-function ComingSoon() {
+function ErrorPage({ code, text }) {
     return (
         <div className="flex flex-col items-center justify-center h-screen bg-gray-100 text-gray-500">
-            503 | Service Unavailable
+            {code} | {text}
         </div>
     );
 };
 
-export default ComingSoon;
+export default ErrorPage;

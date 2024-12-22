@@ -3,7 +3,7 @@
     {
       "name": "Argentina",
       "flag": {
-        "icon": "🇦🇷"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/ar.svg"
       },
       "currency": {
         "code": "ARS",
@@ -22,7 +22,7 @@
     {
       "name": "Australia",
       "flag": {
-        "icon": "🇦🇺"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/au.svg"
       },
       "currency": {
         "code": "AUD",
@@ -41,7 +41,7 @@
     {
       "name": "Brazil",
       "flag": {
-        "icon": "🇧🇷"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/br.svg"
       },
       "currency": {
         "code": "BRL",
@@ -60,7 +60,7 @@
     {
       "name": "Canada",
       "flag": {
-        "icon": "🇨🇦"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/ca.svg"
       },
       "currency": {
         "code": "CAD",
@@ -79,7 +79,7 @@
     {
       "name": "Chile",
       "flag": {
-        "icon": "🇨🇱"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/cl.svg"
       },
       "currency": {
         "code": "CLP",
@@ -98,7 +98,7 @@
     {
       "name": "Colombia",
       "flag": {
-        "icon": "🇨🇴"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/co.svg"
       },
       "currency": {
         "code": "COP",
@@ -115,9 +115,28 @@
       }
     },
     {
+      "name": "Costa Rica",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/cr.svg"
+      },
+      "currency": {
+        "code": "CRC",
+        "name": "Costa Rican Colón",
+        "symbol": "₡"
+      },
+      "locale": "es-CR",
+      "metadata": {
+        "population": 5289000,
+        "area": 51100,
+        "capital": "San José",
+        "region": "Central America",
+        "time_zone": "UTC-6"
+      }
+    },
+    {
       "name": "Dominican Republic",
       "flag": {
-        "icon": "🇩🇴"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/do.svg"
       },
       "currency": {
         "code": "DOP",
@@ -136,7 +155,7 @@
     {
       "name": "France",
       "flag": {
-        "icon": "🇫🇷"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/fr.svg"
       },
       "currency": {
         "code": "EUR",
@@ -155,7 +174,7 @@
     {
       "name": "Germany",
       "flag": {
-        "icon": "🇩🇪"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/de.svg"
       },
       "currency": {
         "code": "EUR",
@@ -172,9 +191,256 @@
       }
     },
     {
+      "name": "Guatemala",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/gt.svg"
+      },
+      "currency": {
+        "code": "GTQ",
+        "name": "Guatemalan Quetzal",
+        "symbol": "Q"
+      },
+      "locale": "es-GT",
+      "metadata": {
+        "population": 18530000,
+        "area": 108889,
+        "capital": "Guatemala City",
+        "region": "Central America",
+        "time_zone": "UTC-6"
+      }
+    },
+    {
+      "name": "Honduras",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/hn.svg"
+      },
+      "currency": {
+        "code": "HNL",
+        "name": "Honduran Lempira",
+        "symbol": "L"
+      },
+      "locale": "es-HN",
+      "metadata": {
+        "population": 10099277,
+        "area": 112492,
+        "capital": "Tegucigalpa",
+        "region": "Central America",
+        "time_zone": "UTC-6"
+      }
+    },
+    {
+      "name": "India",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/in.svg"
+      },
+      "currency": {
+        "code": "INR",
+        "name": "Indian Rupee",
+        "symbol": "₹"
+      },
+      "locale": "en-IN",
+      "metadata": {
+        "population": 1417173173,
+        "area": 3287263,
+        "capital": "New Delhi",
+        "region": "Asia",
+        "time_zone": "UTC+5:30"
+      }
+    },
+    {
+      "name": "Ireland",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/ie.svg"
+      },
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      },
+      "locale": "en-IE",
+      "metadata": {
+        "population": 5034000,
+        "area": 70273,
+        "capital": "Dublin",
+        "region": "Europe",
+        "time_zone": "UTC+0"
+      }
+    },
+    {
+      "name": "Italy",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/it.svg"
+      },
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      },
+      "locale": "it-IT",
+      "metadata": {
+        "population": 59554023,
+        "area": 301340,
+        "capital": "Rome",
+        "region": "Europe",
+        "time_zone": "UTC+1"
+      }
+    },
+    {
+      "name": "Japan",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/jp.svg"
+      },
+      "currency": {
+        "code": "JPY",
+        "name": "Japanese Yen",
+        "symbol": "¥"
+      },
+      "locale": "ja-JP",
+      "metadata": {
+        "population": 125360000,
+        "area": 377975,
+        "capital": "Tokyo",
+        "region": "Asia",
+        "time_zone": "UTC+9"
+      }
+    },
+    {
+      "name": "Mexico",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/mx.svg"
+      },
+      "currency": {
+        "code": "MXN",
+        "name": "Mexican Peso",
+        "symbol": "$"
+      },
+      "locale": "es-MX",
+      "metadata": {
+        "population": 126014024,
+        "area": 1964375,
+        "capital": "Mexico City",
+        "region": "North America",
+        "time_zone": "UTC-5 to UTC-8"
+      }
+    },
+    {
+      "name": "Nicaragua",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/ni.svg"
+      },
+      "currency": {
+        "code": "NIO",
+        "name": "Nicaraguan Córdoba",
+        "symbol": "C$"
+      },
+      "locale": "es-NI",
+      "metadata": {
+        "population": 6654554,
+        "area": 130375,
+        "capital": "Managua",
+        "region": "Central America",
+        "time_zone": "UTC-6"
+      }
+    },
+    {
+      "name": "Philippines",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/ph.svg"
+      },
+      "currency": {
+        "code": "PHP",
+        "name": "Philippine Peso",
+        "symbol": "₱"
+      },
+      "locale": "fil-PH",
+      "metadata": {
+        "population": 112120000,
+        "area": 300000,
+        "capital": "Manila",
+        "region": "Southeast Asia",
+        "time_zone": "UTC+8"
+      }
+    },
+    {
+      "name": "Portugal",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/pt.svg"
+      },
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      },
+      "locale": "pt-PT",
+      "metadata": {
+        "population": 10269417,
+        "area": 92226,
+        "capital": "Lisbon",
+        "region": "Europe",
+        "time_zone": "UTC+0"
+      }
+    },
+    {
+      "name": "Spain",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/es.svg"
+      },
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      },
+      "locale": "es-ES",
+      "metadata": {
+        "population": 47329981,
+        "area": 505990,
+        "capital": "Madrid",
+        "region": "Europe",
+        "time_zone": "UTC+1"
+      }
+    },
+    {
+      "name": "Switzerland",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/ch.svg"
+      },
+      "currency": {
+        "code": "CHF",
+        "name": "Swiss Franc",
+        "symbol": "CHF"
+      },
+      "locale": "de-CH",
+      "metadata": {
+        "population": 8766000,
+        "area": 41284,
+        "capital": "Bern",
+        "region": "Europe",
+        "time_zone": "UTC+1"
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "flag": {
+        "icon": "https://flagicons.lipis.dev/flags/4x3/gb.svg"
+      },
+      "currency": {
+        "code": "GBP",
+        "name": "British Pound Sterling",
+        "symbol": "£"
+      },
+      "locale": "en-GB",
+      "metadata": {
+        "population": 68048000,
+        "area": 242495,
+        "capital": "London",
+        "region": "Europe",
+        "time_zone": "UTC+0"
+      }
+    },
+    {
       "name": "United States",
       "flag": {
-        "icon": "🇺🇸"
+        "icon": "https://flagicons.lipis.dev/flags/4x3/us.svg"
       },
       "currency": {
         "code": "USD",

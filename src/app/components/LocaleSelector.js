@@ -2,39 +2,47 @@ import { countries } from '@/data/locale';
 import { useEffect, useRef, useState } from "react";
 
 function LocaleSelector() {
-    const locale = localStorage.getItem("locale");
+    const defaultCountry = countries.find(country => country.name === "United States");
+    const storedLocale = localStorage.getItem("locale");
+    const [selectedLocale, setSelectedLocale] = useState(defaultCountry.name);
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedLocale, setSelectedLocale] = useState(locale);
     const dropdownRef = useRef(null);
 
-    {/* Check users country on load */ }
-    useEffect(() => {
-        if (locale) {
-            const matchedCountry = countries.find(country => country.locale === locale);
-            if (matchedCountry) {
-                setSelectedLocale(matchedCountry.name);
-            }
-        }
-    }, []);
-
-    {/* Check users country on load */ }
+    // Close the dropdown if user clicks outside
     const handleClickOutside = (event) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
             setIsOpen(false);
         }
     };
 
-    {/* Check users country on load */ }
+    // Close the dropdown on Escape
     const handleEscape = (event) => {
         if (event.key === "Escape") {
             setIsOpen(false);
         }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("keydown", handleEscape);
+    useEffect(() => {
+        if (storedLocale) {
+            const matchedCountry = countries.find(
+                (country) => country.locale === storedLocale
+            );
+            if (matchedCountry) {
+                setSelectedLocale(matchedCountry.name);
+            }
+        }
 
-    {/* Handle Country Selection */ }
+        document.addEventListener("mousedown", handleClickOutside);
+        document.addEventListener("keydown", handleEscape);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("keydown", handleEscape);
+        };
+    }, [storedLocale]);
+
+
+    // Handle a new selection
     const handleSelection = (country) => {
         setSelectedLocale(country.name);
         localStorage.setItem("country", country.name);
@@ -44,13 +52,19 @@ function LocaleSelector() {
 
     return (
         <div className="relative inline-block" ref={dropdownRef}>
-            {/* Dropdown Toggle */}
+            {/* Dropdown Button */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:outline-none transition-all"
             >
-                <span className="mr-2 font-medium text-lg text-gray-800">{countries.find(c => c.name === selectedLocale)?.flag.icon || "\ud83c\uddec\ud83c\udde7"}</span>
-                <span className="text-sm font-semibold text-gray-800">{selectedLocale}</span>
+                <span className="mr-2 font-medium text-lg text-gray-800">
+                    <img className='w-4' src={countries.find((country) => country.name === selectedLocale)?.flag.icon || defaultCountry.flag.icon} />
+                </span>
+                
+                <span className="text-sm font-semibold text-gray-800">
+                    {selectedLocale}
+                </span>
+
                 <svg
                     className="w-4 h-4 ml-2 text-gray-800"
                     xmlns="http://www.w3.org/2000/svg"
@@ -67,16 +81,21 @@ function LocaleSelector() {
 
             {/* Dropdown Menu */}
             {isOpen && (
-                <div className="absolute mt-2 w-[36rem] bg-white text-gray-900 rounded-lg border border-gray-300" style={{ left: '-200px' }}>
-                    <ul className="grid grid-cols-3 gap-4 p-4">
+                <div className="absolute right-0 mt-2 bg-white text-gray-900 rounded-lg border border-gray-300 w-auto">
+                    <ul className="max-h-[250px] overflow-y-scroll">
                         {countries.map((country, index) => (
                             <li
+                                className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-2 transition-all px-4"
                                 key={index}
                                 onClick={() => handleSelection(country)}
-                                className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-2 rounded-lg transition-all"
+                                title={country.name}
                             >
-                                <span className="font-medium text-gray-800">{country.flag.icon}</span>
-                                <span className="text-sm font-semibold text-gray-800 whitespace-nowrap">{country.name}</span>
+                                <span className="font-medium text-gray-800">
+                                    <img className="w-4" src={country.flag.icon}/>
+                                </span>
+                                <span className="text-sm font-semibold text-gray-800 whitespace-nowrap">
+                                    {country.name}
+                                </span>
                             </li>
                         ))}
                     </ul>
@@ -84,6 +103,6 @@ function LocaleSelector() {
             )}
         </div>
     );
-};
+}
 
 export default LocaleSelector;
