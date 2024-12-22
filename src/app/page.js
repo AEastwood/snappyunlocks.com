@@ -1,7 +1,7 @@
 import { headers } from 'next/headers';
-import ErrorPage from "./components/ErrorPage";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import ErrorPage from "@/components/ErrorPage";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 export const metadata = {
   title: 'SnappyUnlocks :: Unlock Your Phone In a Snap!',
   description: 'Welcome to Snappy Unlocks, the most trusted and fastest mobile unlocking site. We pride ourselves on delivering quick, reliable, and secure unlocking services for all mobile devices. Join thousands of satisfied customers who have unlocked their phones with confidence and ease.',

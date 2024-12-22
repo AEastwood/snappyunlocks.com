@@ -1,11 +1,13 @@
+'use client';
+
 import { countries } from '@/data/locale';
 import { useEffect, useRef, useState } from "react";
 
 function LocaleSelector() {
     const defaultCountry = countries.find(country => country.name === "United States");
-    const storedLocale = localStorage.getItem("locale");
     const [selectedLocale, setSelectedLocale] = useState(defaultCountry.name);
     const [isOpen, setIsOpen] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const dropdownRef = useRef(null);
 
     // This function updates the locale storage with the selected country and locale.
@@ -37,11 +39,13 @@ function LocaleSelector() {
 
     useEffect(() => {
         const initializeLocale = () => {
+            const storedLocale = window.localStorage.getItem("locale");
             const matchedCountry = countries.find(
                 (country) => country.locale === storedLocale
             ) || defaultCountry;
             setSelectedLocale(matchedCountry.name);
             updateLocaleStorage(matchedCountry);
+            setIsLoading(false);
         };
 
         initializeLocale();
@@ -51,13 +55,25 @@ function LocaleSelector() {
             document.removeEventListener("mousedown", handleClickOutside);
             document.removeEventListener("keydown", handleEscape);
         };
-    }, [storedLocale]);
+    }, []);
+
+    if (isLoading) {
+        return (
+            <div className="relative inline-block">
+                <div className="flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg border border-gray-300">
+                    <div className="animate-pulse w-4 h-4 bg-gray-200 rounded mr-2"></div>
+                    <div className="animate-pulse w-20 h-4 bg-gray-200 rounded"></div>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="relative inline-block" ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(prev => !prev)}
-                className="flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:outline-none transition-all"
+                className="flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:outline-none transition-all h-[38px] min-h-[38px]"
+                type='button'
             >
                 <span className="mr-2 font-medium text-lg text-gray-800">
                     <img className='w-4' src={countries.find((country) => country.name === selectedLocale)?.flag.icon || defaultCountry.flag.icon} />
