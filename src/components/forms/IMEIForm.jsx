@@ -27,9 +27,9 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
 
     // Form data
     const [formData, setFormData] = useState({
-        country: form?.country || '',
-        network: form?.network || '',
-        imei: form?.imei || ''
+        country: form?.country ?? '',
+        network: form?.network ?? '',
+        imei: form?.imei ?? ''
     });
 
     // Form errors
@@ -71,7 +71,7 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
     }
 
     return (
-        <form onSubmit={handleFormSubmit} className="w-full space-y-4 p-6 max-h-[300px]">
+        <form onSubmit={handleFormSubmit} className="w-full space-y-4 max-h-[300px]">
             <div>
                 <label
                     htmlFor="network"

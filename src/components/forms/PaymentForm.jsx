@@ -2,7 +2,7 @@ import React from 'react'
 
 function PaymentForm({ form, setShowPaymentForm }) {
     return (
-        <div className="flex flex-col gap-4 w-full space-y-4 p-6 max-h-[300px]">
+        <div className="flex flex-col gap-4 w-full space-y-4 max-h-[300px]">
             {JSON.stringify(form)}
 
             <button

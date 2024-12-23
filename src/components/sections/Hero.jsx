@@ -9,7 +9,7 @@ function Hero() {
     const [showPaymentForm, setShowPaymentForm] = useState(false);
     
     return (
-        <div className="max-w-7xl mx-auto pt-12 flex flex-col lg:flex-row justify-between gap-4 min-h-[560px]">
+        <div className="max-w-7xl mx-auto pt-12 flex flex-col lg:flex-row justify-between min-h-[560px]">
             <img
                 className="w-2/5 hidden lg:block transform scale-85 relative"
                 src="https://static.vecteezy.com/system/resources/previews/050/590/603/non_2x/smiling-woman-in-casual-outfit-holding-smartphone-and-looking-at-screen-free-png.png"
@@ -35,7 +35,7 @@ function Hero() {
                 </div>
 
                 {/* IMEI Form */}
-                <div className={`transition-opacity duration-500 bg-white rounded-lg shadow `}>
+                <div className="transition-opacity duration-500 bg-white rounded-lg shadow p-6">
                     {!showPaymentForm ? (
                         <div className={`transition-opacity duration-500 ${showPaymentForm ? 'opacity-0' : 'opacity-100'}`}>
                             <IMEIForm form={form} setForm={setForm} setShowPaymentForm={setShowPaymentForm} />

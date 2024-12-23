@@ -14,7 +14,7 @@ function Header() {
                 aria-label="Global"
             >
                 <div className="flex md:flex-1 gap-12">
-                    <Link href="#" className="-m-1.5 p-1.5">
+                    <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <img
                             className="h-8 w-auto"
@@ -25,8 +25,11 @@ function Header() {
 
                     {/* Desktop menu */}
                     <div className="hidden md:flex md:gap-x-12 my-auto">
-                        <Link href="#" className="text-sm font-semibold text-gray-900">
-                            Features
+                        <Link href="/" className="text-sm text-white hover:underline underline-offset-4" title="Unlock My Phone">
+                            Unlock My Phone
+                        </Link>
+                        <Link href="/track" className="text-sm text-white hover:underline underline-offset-4" title="Track Order">
+                            Track Order
                         </Link>
                     </div>
                 </div>
