@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import countries from '../../data/countries.json'
 import { z } from "zod";
 
-function TrackOrderForm() {
+function TrackOrderForm({ id }) {
     // Form schema
     const FormSchema = z.object({
         orderNumber: z.string()
@@ -17,7 +17,7 @@ function TrackOrderForm() {
 
     // Form data
     const [formData, setFormData] = useState({
-        orderNumber: '',
+        orderNumber: id ?? '',
         email: ''
     });
 

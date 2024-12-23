@@ -4,11 +4,13 @@ import Link from 'next/link';
 import { useState } from 'react';
 import TrackOrderForm from '../forms/TrackOrderForm';
 
-function Track() {
+function Track({ id }) {
     const [form, setForm] = useState(null);
     const [orderStatus, setOrderStatus] = useState('none');
-    const [order, setOrder] = useState(null);
-    const [showPaymentForm, setShowPaymentForm] = useState(false);
+    const [order, setOrder] = useState({
+        orderNumber: id ?? '',
+        email: '',
+    });
 
     return (
         <div className="max-w-7xl mx-auto pt-12 flex flex-col justify-between min-h-[560px]">
@@ -53,7 +55,7 @@ function Track() {
                                 </div>
                             )}
 
-                            <TrackOrderForm />
+                            <TrackOrderForm id={id} />
                         </>
                     )}
 
