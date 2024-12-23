@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState } from 'react'
-import countries from '../../data/countries.json'
 import { z } from "zod";
 
 function TrackOrderForm({ id }) {
