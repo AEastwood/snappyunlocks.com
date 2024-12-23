@@ -1,6 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
+import { headers } from 'next/headers';
 import Header from "@/components/Header";
+import ErrorPage from "@/components/ErrorPage";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,7 +21,13 @@ export const metadata = {
   author: 'Snappy Unlocks',
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const requestHeaders = await headers();
+
+  if (requestHeaders.get('host') === 'snappyunlocks.com') {
+    return <ErrorPage code={503} text="Service Unavailable" />;
+  }
+  
   return (
     <html lang="en">
       <body
