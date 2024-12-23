@@ -9,7 +9,6 @@ export const metadata = {
   author: 'Snappy Unlocks',
 };
 
-
 export default async function Home() {
   const requestHeaders = await headers();
 

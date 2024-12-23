@@ -1,13 +1,13 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
+import IMEIForm from '@/components/forms/IMEIForm'
+import PaymentForm from '@/components/forms/PaymentForm'
 
 function Hero() {
-    {/* Replace these placeholders with your own form handlers, onSubmit logic, etc. */ }
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
-    };
-
+    const [form, setForm] = useState(null);
+    const [showPaymentForm, setShowPaymentForm] = useState(false);
+    
     return (
         <div className="max-w-7xl mx-auto pt-12 flex flex-col lg:flex-row justify-between gap-4 min-h-[560px]">
             <img
@@ -35,64 +35,17 @@ function Hero() {
                 </div>
 
                 {/* IMEI Form */}
-                <form onSubmit={handleFormSubmit} className="w-full space-y-4 bg-white rounded-lg shadow p-6 max-h-[300px]">
-                    <div>
-                        <label
-                            htmlFor="network"
-                            className="block text-gray-700 font-medium mb-1"
-                        >
-                            Select your network
-                        </label>
-                        <div className="flex space-x-2">
-                            <select
-                                id="country"
-                                name="country"
-                                className="block w-1/2 border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500"
-                            >
-                                <option value="uk">United Kingdom</option>
-                                <option value="us">United States</option>
-                                {/* Add more if needed */}
-                            </select>
-                            <select
-                                id="network"
-                                name="network"
-                                className="block w-1/2 border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500"
-                            >
-                                <option value="">Select Network</option>
-                                <option value="o2">O2</option>
-                                <option value="ee">EE</option>
-                                <option value="vodafone">Vodafone</option>
-                                {/* Add more networks as needed */}
-                            </select>
+                <div className={`transition-opacity duration-500 bg-white rounded-lg shadow `}>
+                    {!showPaymentForm ? (
+                        <div className={`transition-opacity duration-500 ${showPaymentForm ? 'opacity-0' : 'opacity-100'}`}>
+                            <IMEIForm form={form} setForm={setForm} setShowPaymentForm={setShowPaymentForm} />
                         </div>
-                    </div>
-
-                    {/* IMEI input */}
-                    <div>
-                        <label
-                            htmlFor="imei"
-                            className="block text-gray-700 font-medium mb-1"
-                        >
-                            Enter IMEI Number
-                        </label>
-                        <input
-                            type="text"
-                            name="imei"
-                            id="imei"
-                            placeholder="IMEI Number"
-                            className="block w-full border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500"
-                        />
-                    </div>
-
-                    {/* Button */}
-                    <button
-                        type="submit"
-                        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-full shadow"
-                        title="Unlock Your Phone"
-                    >
-                        Unlock
-                    </button>
-                </form>
+                    ) : (
+                        <div className={`transition-opacity duration-500 ${showPaymentForm ? 'opacity-100' : 'opacity-0'}`}>
+                            <PaymentForm form={form} setShowPaymentForm={setShowPaymentForm} />
+                        </div>
+                    )}
+                </div>
             </div>
 
         </div>
