@@ -1,198 +1,2248 @@
 [
-    { "name": "Afghanistan", "value": "AF" },
-    { "name": "Albania", "value": "AL" },
-    { "name": "Algeria", "value": "DZ" },
-    { "name": "Andorra", "value": "AD" },
-    { "name": "Angola", "value": "AO" },
-    { "name": "Antigua and Barbuda", "value": "AG" },
-    { "name": "Argentina", "value": "AR" },
-    { "name": "Armenia", "value": "AM" },
-    { "name": "Australia", "value": "AU" },
-    { "name": "Austria", "value": "AT" },
-    { "name": "Azerbaijan", "value": "AZ" },
-    { "name": "Bahamas", "value": "BS" },
-    { "name": "Bahrain", "value": "BH" },
-    { "name": "Bangladesh", "value": "BD" },
-    { "name": "Barbados", "value": "BB" },
-    { "name": "Belarus", "value": "BY" },
-    { "name": "Belgium", "value": "BE" },
-    { "name": "Belize", "value": "BZ" },
-    { "name": "Benin", "value": "BJ" },
-    { "name": "Bhutan", "value": "BT" },
-    { "name": "Bolivia", "value": "BO" },
-    { "name": "Bosnia and Herzegovina", "value": "BA" },
-    { "name": "Botswana", "value": "BW" },
-    { "name": "Brazil", "value": "BR" },
-    { "name": "Brunei", "value": "BN" },
-    { "name": "Bulgaria", "value": "BG" },
-    { "name": "Burkina Faso", "value": "BF" },
-    { "name": "Burundi", "value": "BI" },
-    { "name": "Cabo Verde", "value": "CV" },
-    { "name": "Cambodia", "value": "KH" },
-    { "name": "Cameroon", "value": "CM" },
-    { "name": "Canada", "value": "CA" },
-    { "name": "Central African Republic", "value": "CF" },
-    { "name": "Chad", "value": "TD" },
-    { "name": "Chile", "value": "CL" },
-    { "name": "China", "value": "CN" },
-    { "name": "Colombia", "value": "CO" },
-    { "name": "Comoros", "value": "KM" },
-    { "name": "Congo, Democratic Republic of the", "value": "CD" },
-    { "name": "Congo, Republic of the", "value": "CG" },
-    { "name": "Costa Rica", "value": "CR" },
-    { "name": "Croatia", "value": "HR" },
-    { "name": "Cuba", "value": "CU" },
-    { "name": "Cyprus", "value": "CY" },
-    { "name": "Czech Republic", "value": "CZ" },
-    { "name": "Denmark", "value": "DK" },
-    { "name": "Djibouti", "value": "DJ" },
-    { "name": "Dominica", "value": "DM" },
-    { "name": "Dominican Republic", "value": "DO" },
-    { "name": "Ecuador", "value": "EC" },
-    { "name": "Egypt", "value": "EG" },
-    { "name": "El Salvador", "value": "SV" },
-    { "name": "Equatorial Guinea", "value": "GQ" },
-    { "name": "Eritrea", "value": "ER" },
-    { "name": "Estonia", "value": "EE" },
-    { "name": "Eswatini", "value": "SZ" },
-    { "name": "Ethiopia", "value": "ET" },
-    { "name": "Fiji", "value": "FJ" },
-    { "name": "Finland", "value": "FI" },
-    { "name": "France", "value": "FR" },
-    { "name": "Gabon", "value": "GA" },
-    { "name": "Gambia", "value": "GM" },
-    { "name": "Georgia", "value": "GE" },
-    { "name": "Germany", "value": "DE" },
-    { "name": "Ghana", "value": "GH" },
-    { "name": "Greece", "value": "GR" },
-    { "name": "Grenada", "value": "GD" },
-    { "name": "Guatemala", "value": "GT" },
-    { "name": "Guinea", "value": "GN" },
-    { "name": "Guinea-Bissau", "value": "GW" },
-    { "name": "Guyana", "value": "GY" },
-    { "name": "Haiti", "value": "HT" },
-    { "name": "Honduras", "value": "HN" },
-    { "name": "Hungary", "value": "HU" },
-    { "name": "Iceland", "value": "IS" },
-    { "name": "India", "value": "IN" },
-    { "name": "Indonesia", "value": "ID" },
-    { "name": "Iran", "value": "IR" },
-    { "name": "Iraq", "value": "IQ" },
-    { "name": "Ireland", "value": "IE" },
-    { "name": "Israel", "value": "IL" },
-    { "name": "Italy", "value": "IT" },
-    { "name": "Jamaica", "value": "JM" },
-    { "name": "Japan", "value": "JP" },
-    { "name": "Jordan", "value": "JO" },
-    { "name": "Kazakhstan", "value": "KZ" },
-    { "name": "Kenya", "value": "KE" },
-    { "name": "Kiribati", "value": "KI" },
-    { "name": "Korea, North", "value": "KP" },
-    { "name": "Korea, South", "value": "KR" },
-    { "name": "Kosovo", "value": "XK" },
-    { "name": "Kuwait", "value": "KW" },
-    { "name": "Kyrgyzstan", "value": "KG" },
-    { "name": "Laos", "value": "LA" },
-    { "name": "Latvia", "value": "LV" },
-    { "name": "Lebanon", "value": "LB" },
-    { "name": "Lesotho", "value": "LS" },
-    { "name": "Liberia", "value": "LR" },
-    { "name": "Libya", "value": "LY" },
-    { "name": "Liechtenstein", "value": "LI" },
-    { "name": "Lithuania", "value": "LT" },
-    { "name": "Luxembourg", "value": "LU" },
-    { "name": "Madagascar", "value": "MG" },
-    { "name": "Malawi", "value": "MW" },
-    { "name": "Malaysia", "value": "MY" },
-    { "name": "Maldives", "value": "MV" },
-    { "name": "Mali", "value": "ML" },
-    { "name": "Malta", "value": "MT" },
-    { "name": "Marshall Islands", "value": "MH" },
-    { "name": "Mauritania", "value": "MR" },
-    { "name": "Mauritius", "value": "MU" },
-    { "name": "Mexico", "value": "MX" },
-    { "name": "Micronesia", "value": "FM" },
-    { "name": "Moldova", "value": "MD" },
-    { "name": "Monaco", "value": "MC" },
-    { "name": "Mongolia", "value": "MN" },
-    { "name": "Montenegro", "value": "ME" },
-    { "name": "Morocco", "value": "MA" },
-    { "name": "Mozambique", "value": "MZ" },
-    { "name": "Myanmar", "value": "MM" },
-    { "name": "Namibia", "value": "NA" },
-    { "name": "Nauru", "value": "NR" },
-    { "name": "Nepal", "value": "NP" },
-    { "name": "Netherlands", "value": "NL" },
-    { "name": "New Zealand", "value": "NZ" },
-    { "name": "Nicaragua", "value": "NI" },
-    { "name": "Niger", "value": "NE" },
-    { "name": "Nigeria", "value": "NG" },
-    { "name": "North Macedonia", "value": "MK" },
-    { "name": "Norway", "value": "NO" },
-    { "name": "Oman", "value": "OM" },
-    { "name": "Pakistan", "value": "PK" },
-    { "name": "Palau", "value": "PW" },
-    { "name": "Palestine", "value": "PS" },
-    { "name": "Panama", "value": "PA" },
-    { "name": "Papua New Guinea", "value": "PG" },
-    { "name": "Paraguay", "value": "PY" },
-    { "name": "Peru", "value": "PE" },
-    { "name": "Philippines", "value": "PH" },
-    { "name": "Poland", "value": "PL" },
-    { "name": "Portugal", "value": "PT" },
-    { "name": "Qatar", "value": "QA" },
-    { "name": "Romania", "value": "RO" },
-    { "name": "Russia", "value": "RU" },
-    { "name": "Rwanda", "value": "RW" },
-    { "name": "Saint Kitts and Nevis", "value": "KN" },
-    { "name": "Saint Lucia", "value": "LC" },
-    { "name": "Saint Vincent and the Grenadines", "value": "VC" },
-    { "name": "Samoa", "value": "WS" },
-    { "name": "San Marino", "value": "SM" },
-    { "name": "Sao Tome and Principe", "value": "ST" },
-    { "name": "Saudi Arabia", "value": "SA" },
-    { "name": "Senegal", "value": "SN" },
-    { "name": "Serbia", "value": "RS" },
-    { "name": "Seychelles", "value": "SC" },
-    { "name": "Sierra Leone", "value": "SL" },
-    { "name": "Singapore", "value": "SG" },
-    { "name": "Slovakia", "value": "SK" },
-    { "name": "Slovenia", "value": "SI" },
-    { "name": "Solomon Islands", "value": "SB" },
-    { "name": "Somalia", "value": "SO" },
-    { "name": "South Africa", "value": "ZA" },
-    { "name": "South Sudan", "value": "SS" },
-    { "name": "Spain", "value": "ES" },
-    { "name": "Sri Lanka", "value": "LK" },
-    { "name": "Sudan", "value": "SD" },
-    { "name": "Suriname", "value": "SR" },
-    { "name": "Sweden", "value": "SE" },
-    { "name": "Switzerland", "value": "CH" },
-    { "name": "Syria", "value": "SY" },
-    { "name": "Taiwan", "value": "TW" },
-    { "name": "Tajikistan", "value": "TJ" },
-    { "name": "Tanzania", "value": "TZ" },
-    { "name": "Thailand", "value": "TH" },
-    { "name": "Timor-Leste", "value": "TL" },
-    { "name": "Togo", "value": "TG" },
-    { "name": "Tonga", "value": "TO" },
-    { "name": "Trinidad and Tobago", "value": "TT" },
-    { "name": "Tunisia", "value": "TN" },
-    { "name": "Turkey", "value": "TR" },
-    { "name": "Turkmenistan", "value": "TM" },
-    { "name": "Tuvalu", "value": "TV" },
-    { "name": "Uganda", "value": "UG" },
-    { "name": "Ukraine", "value": "UA" },
-    { "name": "United Arab Emirates", "value": "AE" },
-    { "name": "United Kingdom", "value": "GB" },
-    { "name": "United States", "value": "US" },
-    { "name": "Uruguay", "value": "UY" },
-    { "name": "Uzbekistan", "value": "UZ" },
-    { "name": "Vanuatu", "value": "VU" },
-    { "name": "Vatican City", "value": "VA" },
-    { "name": "Venezuela", "value": "VE" },
-    { "name": "Vietnam", "value": "VN" },
-    { "name": "Yemen", "value": "YE" },
-    { "name": "Zambia", "value": "ZM" },
-    { "name": "Zimbabwe", "value": "ZW" }
-]
+    {
+      "name": "Afghanistan",
+      "value": "AF",
+      "providers": [
+        "Afghan Wireless",
+        "Etisalat Afghanistan",
+        "MTN Afghanistan",
+        "Roshan (Telecom Development Company Afghanistan)",
+        "Salam Telecom",
+        "Afghan Telecom",
+        "Wasel"
+      ]
+    },
+    {
+      "name": "Albania",
+      "value": "AL",
+      "providers": [
+        "Vodafone Albania",
+        "One Telecommunications",
+        "Albtelecom (ALBtelecom)",
+        "Telekom Albania (Formerly AMC)"
+      ]
+    },
+    {
+      "name": "Algeria",
+      "value": "DZ",
+      "providers": [
+        "Mobilis (Algérie Télécom Mobile)",
+        "Djezzy",
+        "Ooredoo Algeria (formerly Nedjma)"
+      ]
+    },
+    {
+      "name": "Andorra",
+      "value": "AD",
+      "providers": [
+        "Andorra Telecom (Mobiland, formerly Servei de Telecomunicacions d’Andorra)"
+      ]
+    },
+    {
+      "name": "Angola",
+      "value": "AO",
+      "providers": [
+        "Unitel",
+        "Movicel",
+        "Africell Angola"
+      ]
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "value": "AG",
+      "providers": [
+        "Digicel",
+        "Flow (Cable & Wireless)",
+        "APUA"
+      ]
+    },
+    {
+      "name": "Argentina",
+      "value": "AR",
+      "providers": [
+        "Claro Argentina",
+        "Movistar Argentina",
+        "Personal (Telecom Argentina)",
+        "Nextel",
+        "Tuenti (MVNO on Movistar)",
+        "Nuestro (MVNO on Personal)"
+      ]
+    },
+    {
+      "name": "Armenia",
+      "value": "AM",
+      "providers": [
+        "Viva-MTS (MTS Armenia)",
+        "Ucom (formerly Orange Armenia)",
+        "Beeline Armenia (VEON, formerly ArmenTel)"
+      ]
+    },
+    {
+      "name": "Aruba",
+      "value": "AW",
+      "providers": [
+        "Digicel",
+        "MIO",
+        "SetarNV"
+      ]
+    },
+    {
+      "name": "Australia",
+      "value": "AU",
+      "providers": [
+        "Telstra",
+        "Optus",
+        "Vodafone Australia",
+        "TPG Telecom"
+      ]
+    },
+    {
+      "name": "Austria",
+      "value": "AT",
+      "providers": [
+        "A1 Telekom Austria",
+        "Magenta Telekom (T-Mobile Austria)",
+        "Drei (3 Austria)"
+      ]
+    },
+    {
+      "name": "Azerbaijan",
+      "value": "AZ",
+      "providers": [
+        "Azercell",
+        "Bakcell",
+        "Nar Mobile (Azerfon)",
+        "Aztrank",
+        "Nakhtel"
+      ]
+    },
+    {
+      "name": "Bahamas",
+      "value": "BS",
+      "providers": [
+        "BTC (Bahamas Telecommunications Company)",
+        "Aliv (BeAliv)"
+      ]
+    },
+    {
+      "name": "Bahrain",
+      "value": "BH",
+      "providers": [
+        "Batelco (Bahrain Telecommunications Company)",
+        "Zain Bahrain (formerly MTC-Vodafone)",
+        "stc Bahrain (formerly VIVA)"
+      ]
+    },
+    {
+      "name": "Bangladesh",
+      "value": "BD",
+      "providers": [
+        "Grameenphone",
+        "Robi",
+        "Banglalink",
+        "Teletalk",
+        "Ollo",
+        "Banglalion"
+      ]
+    },
+    {
+      "name": "Barbados",
+      "value": "BB",
+      "providers": [
+        "Flow (Cable & Wireless)",
+        "Digicel Barbados",
+        "Ozone Wireless",
+        "Sunbeach"
+      ]
+    },
+    {
+      "name": "Belarus",
+      "value": "BY",
+      "providers": [
+        "MTS Belarus",
+        "A1 (velcom)",
+        "life:) (Turkcell)",
+        "BeCloud"
+      ]
+    },
+    {
+      "name": "Belgium",
+      "value": "BE",
+      "providers": [
+        "Proximus (Belgacom Mobile)",
+        "Orange Belgium (formerly Mobistar)",
+        "Telenet (Base)"
+      ]
+    },
+    {
+      "name": "Belize",
+      "value": "BZ",
+      "providers": [
+        "Belize Telemedia Limited (BTL, Digi)",
+        "Smart (Speednet Communications)"
+      ]
+    },
+    {
+      "name": "Benin",
+      "value": "BJ",
+      "providers": [
+        "MTN Benin",
+        "Moov Africa",
+        "Glo (Globacom)",
+        "BBCOM (regional)",
+        "Libercom" 
+      ]
+    },
+    {
+      "name": "Bermuda",
+      "value": "BM",
+      "providers": [
+        "Cell One",
+        "Digicel"
+      ]
+    },
+    {
+      "name": "Bhutan",
+      "value": "BT",
+      "providers": [
+        "Bhutan Telecom (B-Mobile)",
+        "TashiCell",
+        "Airtel Bhutan (limited)"
+      ]
+    },
+    {
+      "name": "Bolivia",
+      "value": "BO",
+      "providers": [
+        "Entel Bolivia",
+        "Tigo (Millicom)",
+        "Viva (Nuevatel)"
+      ]
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "value": "BA",
+      "providers": [
+        "BH Telecom",
+        "m:tel (Telekom Srpske)",
+        "HT Eronet"
+      ]
+    },
+    {
+      "name": "Botswana",
+      "value": "BW",
+      "providers": [
+        "Mascom",
+        "Orange Botswana",
+        "BTC Mobile (BeMobile)"
+      ]
+    },
+    {
+      "name": "Brazil",
+      "value": "BR",
+      "providers": [
+        "Vivo (Telefônica Brasil)",
+        "TIM Brasil",
+        "Claro (América Móvil)",
+        "Oi",
+        "Nextel",
+        "Algar Telecom (formerly CTBC)",
+        "Sercomtel",
+        "SurfTelecom (MVNE/MVNO host)",
+        "Porto Conecta (MVNO on TIM)",
+        "Correios Celular (MVNO on SurfTelecom)",
+        "veek (MVNO on SurfTelecom)",
+        "Vodafone (M2M/broadband via Datora Mobile)",
+        "Mais AD (Movttel) (MVNO on Vivo & SISTEER)",
+        "Sky Brasil (limited mobile broadband)"
+      ]
+    },
+    {
+      "name": "British Virgin Islands",
+      "value": "VG",
+      "providers": [
+        "CCT",
+        "FLOW",
+        "Digicel"
+      ]
+    },
+    {
+      "name": "Brunei",
+      "value": "BN",
+      "providers": [
+        "DSTCom",
+        "Progresif (formerly B-mobile and TelBru)",
+        "imagine"
+      ]
+    },
+    {
+      "name": "Bulgaria",
+      "value": "BG",
+      "providers": [
+        "A1 Bulgaria (formerly Mtel)",
+        "Telenor Bulgaria (formerly Globul)",
+        "Vivacom (formerly Vivatel)",
+        "Bulsatcom (MVNO)",
+        "T.Com (formerly Max Telecom, MAX)"
+      ]
+    },
+    {
+      "name": "Burkina Faso",
+      "value": "BF",
+      "providers": [
+        "Onatel (Telmob)",
+        "Orange Burkina Faso",
+        "Telecel Faso"
+      ]
+    },
+    {
+      "name": "Burundi",
+      "value": "BI",
+      "providers": [
+        "Lumitel (Viettel Burundi)",
+        "Econet Leo",
+        "Smart Mobile (formerly Lacell)",
+        "Onatel (partially state-run)"
+      ]
+    },
+    {
+      "name": "Cabo Verde",
+      "value": "CV",
+      "providers": [
+        "CVMovel (CVM)",
+        "Unitel T+",
+        "T-MAIS"
+      ]
+    },
+    {
+      "name": "Cambodia",
+      "value": "KH",
+      "providers": [
+        "Cellcard (CamGSM)",
+        "Smart Axiata",
+        "Metfone",
+        "qb",
+        "Seatel",
+        "Cootel"
+      ]
+    },
+    {
+      "name": "Cameroon",
+      "value": "CM",
+      "providers": [
+        "MTN Cameroon",
+        "Orange Cameroun",
+        "Nexttel",
+        "Camtel",
+        "YooMee (data-focused)"
+      ]
+    },
+    {
+      "name": "Canada",
+      "value": "CA",
+      "providers": [
+        "Rogers (includes Fido and Chatr)",
+        "Bell (includes Virgin Plus and MTS)",
+        "Telus (includes Koodo and Public Mobile)",
+        "Freedom Mobile",
+        "Videotron (regional)",
+        "Eastlink (regional)",
+        "SaskTel (regional)",
+        "TNW Wireless (regional)"
+      ]
+    },
+    {
+      "name": "Cayman Islands",
+      "value": "KY",
+      "providers": [
+        "FLOW Cayman",
+        "Digicel"
+      ]
+    },
+    {
+      "name": "Central African Republic",
+      "value": "CF",
+      "providers": [
+        "Orange RCA",
+        "Telecel Centrafrique",
+        "Moov (Atlantique Telecom)",
+        "Azur",
+        "Nationlink (limited)"
+      ]
+    },
+    {
+      "name": "Chad",
+      "value": "TD",
+      "providers": [
+        "Airtel Chad",
+        "Tigo Chad",
+        "Salam (Sudatel)",
+        "SotelTchad"
+      ]
+    },
+    {
+      "name": "Chile",
+      "value": "CL",
+      "providers": [
+        "Movistar (Telefónica)",
+        "Entel",
+        "Claro (América Móvil)",
+        "WOM (formerly Nextel)",
+        "VTR Móvil",
+        "Virgin Mobile",
+        "Falabella Móvil",
+        "Simple",
+        "Telsur",
+        "Netline",
+        "Interexport"
+      ]
+    },
+    {
+      "name": "China",
+      "value": "CN",
+      "providers": [
+        "China Mobile",
+        "China Unicom",
+        "China Telecom",
+        "China Broadcasting Network (CBN; limited rollout)"
+      ]
+    },
+    {
+      "name": "Colombia",
+      "value": "CO",
+      "providers": [
+        "Claro Colombia",
+        "Movistar Colombia",
+        "Tigo (Millicom)",
+        "Avantel",
+        "ETB",
+        "Virgin Mobile (MVNO on Movistar)",
+        "Móvil Éxito (MVNO on Tigo)",
+        "UFF! (MVNO on Tigo)",
+        "UNE (now part of Tigo)"
+      ]
+    },
+    {
+      "name": "Comoros",
+      "value": "KM",
+      "providers": [
+        "Comores Telecom (Comtel/HURI)",
+        "Telma Comores (Telecom Malagasy)",
+        "Comoro Gulf Holding (limited)"
+      ]
+    },
+    {
+      "name": "Congo, Democratic Republic of the",
+      "value": "CD",
+      "providers": [
+        "Vodacom Congo",
+        "Airtel Congo (ex-Celtel)",
+        "Orange Congo DRC",
+        "Africell",
+        "Tigo / Orange (merged in some areas)",
+        "Supercell",
+        "SemaTel",
+        "U-Com",
+        "Smile"
+      ]
+    },
+    {
+      "name": "Congo, Republic of the",
+      "value": "CG",
+      "providers": [
+        "MTN Congo",
+        "Airtel Congo",
+        "Azur",
+        "Libertis (Groupe Congo Telecom)"
+      ]
+    },
+    {
+      "name": "Cook Islands",
+      "value": "CK",
+      "providers": [
+        "Bluesky"
+      ]
+    },
+    {
+      "name": "Costa Rica",
+      "value": "CR",
+      "providers": [
+        "ICE (Kolbi)",
+        "Movistar Costa Rica",
+        "Claro Costa Rica",
+        "Tuyo Móvil (MVNO)",
+        "Fullmóvil (MVNO on Kolbi)"
+      ]
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "value": "CI",
+      "providers": [
+        "Orange",
+        "MTN",
+        "Moov",
+        "Koz",
+        "GreenN",
+        "Warid",
+        "Mobile Cafe",
+        "YooMee"
+      ]
+    },
+    {
+      "name": "Croatia",
+      "value": "HR",
+      "providers": [
+        "Hrvatski Telekom (formerly T-Mobile, HTmobile)",
+        "A1 Croatia (formerly VIPnet)",
+        "Telemach (formerly Tele2)"
+      ]
+    },
+    {
+      "name": "Cuba",
+      "value": "CU",
+      "providers": [
+        "ETECSA (Cubacel)"
+      ]
+    },
+    {
+      "name": "Curaçao",
+      "value": "CW",
+      "providers": [
+        "Digicel",
+        "CHIPPIE"
+      ]
+    },
+    {
+      "name": "Cyprus",
+      "value": "CY",
+      "providers": [
+        "CYTA (Cytamobile-Vodafone)",
+        "Epic (formerly MTN Cyprus / Areeba)",
+        "PrimeTel",
+        "Cablenet (MVNO)"
+      ]
+    },
+    {
+      "name": "Czech Republic",
+      "value": "CZ",
+      "providers": [
+        "O2 Czech Republic (formerly Eurotel)",
+        "T-Mobile Czech Republic (formerly Paegas)",
+        "Vodafone Czech Republic (formerly Oskar)"
+      ]
+    },
+    {
+      "name": "Denmark",
+      "value": "DK",
+      "providers": [
+        "TDC",
+        "3 Denmark (Tre)",
+        "Telenor Denmark (formerly Sonofon)",
+        "Telia Denmark",
+        "Net 1 (regional)"
+      ]
+    },
+    {
+      "name": "Djibouti",
+      "value": "DJ",
+      "providers": [
+        "Djibouti Telecom (Evatis)"
+      ]
+    },
+    {
+      "name": "Dominica",
+      "value": "DM",
+      "providers": [
+        "Digicel Dominica",
+        "Flow (Cable & Wireless)"
+      ]
+    },
+    {
+      "name": "Dominican Republic",
+      "value": "DO",
+      "providers": [
+        "Claro (formerly Codetel)",
+        "Altice (formerly Orange + Tricom)",
+        "Viva (Trilogy)",
+        "Altice CDMA (limited, was Tricom)"
+      ]
+    },
+    {
+      "name": "Ecuador",
+      "value": "EC",
+      "providers": [
+        "Claro Ecuador",
+        "Movistar Ecuador",
+        "CNT (Corporación Nacional de Telecomunicaciones)",
+        "Tuenti (Telefónica MVNO)"
+      ]
+    },
+    {
+      "name": "Egypt",
+      "value": "EG",
+      "providers": [
+        "Vodafone Egypt",
+        "Orange Egypt (formerly Mobinil)",
+        "Etisalat Misr",
+        "WE (Telecom Egypt)"
+      ]
+    },
+    {
+      "name": "El Salvador",
+      "value": "SV",
+      "providers": [
+        "Tigo (Millicom)",
+        "Claro (América Móvil)",
+        "Movistar (Telefónica)",
+        "Digicel",
+        "RED"
+      ]
+    },
+    {
+      "name": "Equatorial Guinea",
+      "value": "GQ",
+      "providers": [
+        "GETESA (Orange)",
+        "Muni (HiTs Telecom)",
+        "Gecomsa"
+      ]
+    },
+    {
+      "name": "Eritrea",
+      "value": "ER",
+      "providers": [
+        "Eritel"
+      ]
+    },
+    {
+      "name": "Estonia",
+      "value": "EE",
+      "providers": [
+        "Telia Estonia (formerly Eesti Telekom)",
+        "Elisa Estonia (formerly Radiolinja)",
+        "Tele2 Estonia"
+      ]
+    },
+    {
+      "name": "Eswatini",
+      "value": "SZ",
+      "providers": [
+        "MTN Eswatini",
+        "Eswatini Mobile"
+      ]
+    },
+    {
+      "name": "Ethiopia",
+      "value": "ET",
+      "providers": [
+        "Ethio Telecom",
+        "Safaricom Ethiopia"
+      ]
+    },
+    {
+      "name": "Falkland Islands",
+      "value": "FK",
+      "providers": [
+        "Sure"
+      ]
+    },
+    {
+      "name": "Faroe Islands",
+      "value": "FO",
+      "providers": [
+        "Føroya Tele",
+        "Hey (formerly Kall)"
+      ]
+    },
+    {
+      "name": "Fiji",
+      "value": "FJ",
+      "providers": [
+        "Vodafone Fiji",
+        "Digicel Fiji"
+      ]
+    },
+    {
+      "name": "Finland",
+      "value": "FI",
+      "providers": [
+        "Elisa",
+        "Telia Finland (formerly Sonera)",
+        "DNA",
+        "Ålcom (Åland Islands, regional)",
+        "Ukko Mobile (regional)"
+      ]
+    },
+    {
+      "name": "France",
+      "value": "FR",
+      "providers": [
+        "Orange (formerly Itineris)",
+        "SFR",
+        "Bouygues Telecom",
+        "Free Mobile"
+      ]
+    },
+    {
+      "name": "French Polynesia",
+      "value": "PF",
+      "providers": [
+        "VINI",
+        "Pacific Mobile Telecom (PMT)",
+        "Viti",
+        "Mara Telecom"
+      ]
+    },
+    {
+      "name": "Gabon",
+      "value": "GA",
+      "providers": [
+        "Gabon Telecom (Libertis)",
+        "Airtel Gabon (formerly Celtel, Zain)",
+        "Moov Africa Gabon",
+        "Azur"
+      ]
+    },
+    {
+      "name": "Gambia",
+      "value": "GM",
+      "providers": [
+        "Africell",
+        "Gamcel",
+        "Qcell",
+        "Comium Gambia"
+      ]
+    },
+    {
+      "name": "Georgia",
+      "value": "GE",
+      "providers": [
+        "MagtiCom",
+        "Silknet (Geocell)",
+        "Beeline (VEON Georgia)"
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": "DE",
+      "providers": [
+        "Deutsche Telekom (T-Mobile)",
+        "Vodafone Germany",
+        "Telefónica Germany (O2, includes former E-Plus)",
+        "1&1 (MVNO on Telefónica/Vodafone)"
+      ]
+    },
+    {
+      "name": "Ghana",
+      "value": "GH",
+      "providers": [
+        "MTN Ghana",
+        "Vodafone Ghana",
+        "AirtelTigo",
+        "Glo Ghana",
+        "Expresso (limited)"
+      ]
+    },
+    {
+      "name": "Gibraltar",
+      "value": "GI",
+      "providers": [
+        "GIBTEL"
+      ]
+    },
+    {
+      "name": "Greece",
+      "value": "GR",
+      "providers": [
+        "Cosmote",
+        "Vodafone Greece (formerly Panafon)",
+        "Wind Hellas (formerly Telestet, TIM, includes Q-Telecom)",
+        "Nova (Forthnet)"
+      ]
+    },
+    {
+      "name": "Greenland",
+      "value": "GL",
+      "providers": [
+        "TELE Greenland"
+      ]
+    },
+    {
+      "name": "Grenada",
+      "value": "GD",
+      "providers": [
+        "Digicel Grenada",
+        "Flow (Cable & Wireless)"
+      ]
+    },
+    {
+      "name": "Guadeloupe, Martinique & French Guiana",
+      "value": "GP/MQ/GF",
+      "providers": [
+        "Orange Caraïbe",
+        "Digicel",
+        "SFR Caraïbe"
+      ]
+    },
+    {
+      "name": "Guam",
+      "value": "GU",
+      "providers": [
+        "IT&E",
+        "Docomo Pacific",
+        "GTA",
+        "iConnect"
+      ]
+    },
+    {
+      "name": "Guatemala",
+      "value": "GT",
+      "providers": [
+        "Tigo (Millicom)",
+        "Claro (América Móvil)",
+        "Movistar (Telefónica)"
+      ]
+    },
+    {
+      "name": "Guernsey",
+      "value": "GG",
+      "providers": [
+        "Sure Mobile",
+        "JT Global",
+        "Airtel-Vodafone"
+      ]
+    },
+    {
+      "name": "Guinea",
+      "value": "GN",
+      "providers": [
+        "Orange Guinée",
+        "MTN Guinée (Areeba)",
+        "Cellcom",
+        "Africell",
+        "Intercel",
+        "Sotelgui (uncertain status)"
+      ]
+    },
+    {
+      "name": "Guinea-Bissau",
+      "value": "GW",
+      "providers": [
+        "MTN Guinée-Bissau",
+        "Orange Bissau",
+        "Guinetel (limited)",
+        "pt:Guinetel (legacy name)"
+      ]
+    },
+    {
+      "name": "Guyana",
+      "value": "GY",
+      "providers": [
+        "GTT (Guyana Telephone & Telegraph)",
+        "Digicel Guyana"
+      ]
+    },
+    {
+      "name": "Haiti",
+      "value": "HT",
+      "providers": [
+        "Digicel Haiti",
+        "Natcom (Viettel)",
+        "Comcel/Voila (legacy, merged)"
+      ]
+    },
+    {
+      "name": "Honduras",
+      "value": "HN",
+      "providers": [
+        "Tigo (Millicom)",
+        "Claro (América Móvil)",
+        "Hondutel (limited mobile services)",
+        "Tegucel / Sulacel / Ceibacel (regional)"
+      ]
+    },
+    {
+      "name": "Hong Kong",
+      "value": "HK",
+      "providers": [
+        "CMHK (China Mobile Hong Kong)",
+        "csl (includes 1O1O and Club SIM)",
+        "3 Hong Kong",
+        "SmarTone",
+        "China Unicom (HK) (MVNO on 3)",
+        "HKBN (MVNO on CMHK, SmarTone)",
+        "SUN Mobile (MVNO on CSL)",
+        "Birdie Mobile (MVNO on SmarTone)"
+      ]
+    },
+    {
+      "name": "Hungary",
+      "value": "HU",
+      "providers": [
+        "Magyar Telekom (T-Mobile)",
+        "Vodafone Hungary",
+        "Yettel (formerly Telenor Hungary)",
+        "Digi.Mobil (test phase in some areas)"
+      ]
+    },
+    {
+      "name": "Iceland",
+      "value": "IS",
+      "providers": [
+        "Síminn",
+        "Vodafone Iceland",
+        "Nova",
+        "IceCell (limited)"
+      ]
+    },
+    {
+      "name": "India",
+      "value": "IN",
+      "providers": [
+        "Airtel (Bharti)",
+        "Reliance Jio",
+        "Vi (Vodafone Idea)",
+        "BSNL / MTNL (state-owned)",
+        "Tata Docomo (merged into Airtel in many circles)",
+        "Reliance Communications (legacy, mostly defunct)"
+      ]
+    },
+    {
+      "name": "Indonesia",
+      "value": "ID",
+      "providers": [
+        "Telkomsel (includes former Telkom Flexi)",
+        "Indosat Ooredoo (includes former Satelindo, StarOne)",
+        "XL Axiata (includes former Axis)",
+        "3 (Tri)",
+        "Smartfren"
+      ]
+    },
+    {
+      "name": "Iran",
+      "value": "IR",
+      "providers": [
+        "MCI (Hamrahe Aval)",
+        "Irancell (MTN)",
+        "Rightel",
+        "Taliya"
+      ]
+    },
+    {
+      "name": "Iraq",
+      "value": "IQ",
+      "providers": [
+        "Zain Iraq",
+        "Asiacell",
+        "Korek Telecom",
+        "Omnnea",
+        "Itisaluna (limited CDMA)"
+      ]
+    },
+    {
+      "name": "Ireland",
+      "value": "IE",
+      "providers": [
+        "Vodafone Ireland (formerly Eircell)",
+        "Three Ireland (includes former O2)",
+        "Eir (formerly Meteor)",
+        "Tesco Mobile (MVNO)"
+      ]
+    },
+    {
+      "name": "Isle of Man",
+      "value": "IM",
+      "providers": [
+        "Manx Telecom",
+        "Sure Mobile"
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": "IL",
+      "providers": [
+        "Cellcom",
+        "Partner (formerly Orange)",
+        "Pelephone",
+        "HOT Mobile",
+        "Golan Telecom",
+        "Rami Levy (MVNO on Pelephone)",
+        "019 Telzar (MVNO on Partner)",
+        "Cellact (MVNO on Pelephone)"
+      ]
+    },
+    {
+      "name": "Italy",
+      "value": "IT",
+      "providers": [
+        "TIM (Telecom Italia)",
+        "Vodafone Italy (formerly Omnitel)",
+        "Wind Tre (merged WIND and 3 Italia)",
+        "Iliad",
+        "PosteMobile (MVNO)"
+      ]
+    },
+    {
+      "name": "Jamaica",
+      "value": "JM",
+      "providers": [
+        "Digicel Jamaica",
+        "Flow (Cable & Wireless/LIME)",
+        "Caricel (limited, rebranding status)"
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": "JP",
+      "providers": [
+        "NTT Docomo",
+        "KDDI (au)",
+        "SoftBank",
+        "Rakuten Mobile",
+        "Disney Mobile (MVNO on SoftBank)",
+        "b-mobile (MVNO)",
+        "Y!Mobile (SoftBank sub-brand)"
+      ]
+    },
+    {
+      "name": "Jersey",
+      "value": "JE",
+      "providers": [
+        "JT (Jersey) Global",
+        "Sure Mobile",
+        "Airtel-Vodafone"
+      ]
+    },
+    {
+      "name": "Jordan",
+      "value": "JO",
+      "providers": [
+        "Zain Jordan",
+        "Orange Jordan",
+        "Umniah"
+      ]
+    },
+    {
+      "name": "Kazakhstan",
+      "value": "KZ",
+      "providers": [
+        "Kcell",
+        "Beeline Kazakhstan",
+        "Tele2 Kazakhstan",
+        "Altel"
+      ]
+    },
+    {
+      "name": "Kenya",
+      "value": "KE",
+      "providers": [
+        "Safaricom",
+        "Airtel Kenya (formerly Zain)",
+        "Telkom Kenya (formerly Orange)",
+        "Faiba 4G (Jamii Telecom)"
+      ]
+    },
+    {
+      "name": "Kiribati",
+      "value": "KI",
+      "providers": [
+        "Amalgamated Telecom Holdings Kiribati (ATH KL)",
+        "Telecom Services Kiribati Limited (TSKL)"
+      ]
+    },
+    {
+      "name": "Korea, North",
+      "value": "KP",
+      "providers": [
+        "Koryolink",
+        "Kang Song Net (limited info)",
+        "Byol (limited info)"
+      ]
+    },
+    {
+      "name": "Korea, South",
+      "value": "KR",
+      "providers": [
+        "SK Telecom",
+        "KT (Olleh)",
+        "LG U+"
+      ]
+    },
+    {
+      "name": "Kosovo",
+      "value": "XK",
+      "providers": [
+        "Vala (Telekom of Kosovo)",
+        "IPKO",
+        "Z Mobile",
+        "mts (limited in some regions)",
+        "D3 mobile (MVNO)"
+      ]
+    },
+    {
+      "name": "Kuwait",
+      "value": "KW",
+      "providers": [
+        "Zain Kuwait",
+        "Ooredoo Kuwait (formerly Wataniya)",
+        "stc Kuwait (formerly VIVA)"
+      ]
+    },
+    {
+      "name": "Kyrgyzstan",
+      "value": "KG",
+      "providers": [
+        "Beeline Kyrgyzstan",
+        "MegaCom",
+        "Nur Telecom (O!)",
+        "Fonex",
+        "Katel",
+        "Nexi",
+        "Sapat Mobile"
+      ]
+    },
+    {
+      "name": "Laos",
+      "value": "LA",
+      "providers": [
+        "Lao Telecom",
+        "Unitel (Viettel)",
+        "ETL",
+        "Beeline Laos",
+        "Sky Telecom (limited)"
+      ]
+    },
+    {
+      "name": "Latvia",
+      "value": "LV",
+      "providers": [
+        "LMT",
+        "Tele2 Latvia",
+        "Bite",
+        "Tet (MVNO)",
+        "Triatel (CDMA/limited)"
+      ]
+    },
+    {
+      "name": "Lebanon",
+      "value": "LB",
+      "providers": [
+        "Alfa",
+        "Touch (Zain)"
+      ]
+    },
+    {
+      "name": "Lesotho",
+      "value": "LS",
+      "providers": [
+        "Vodacom Lesotho",
+        "Econet Telecom Lesotho (Ezi-Cel)"
+      ]
+    },
+    {
+      "name": "Liberia",
+      "value": "LR",
+      "providers": [
+        "Lonestar Cell MTN",
+        "Orange Liberia",
+        "Novafone (formerly Comium)",
+        "Libtelco (limited)"
+      ]
+    },
+    {
+      "name": "Libya",
+      "value": "LY",
+      "providers": [
+        "Libyana",
+        "Al Madar Al Jadeed",
+        "Hatef Libya (limited mobile services)"
+      ]
+    },
+    {
+      "name": "Liechtenstein",
+      "value": "LI",
+      "providers": [
+        "Telecom Liechtenstein (FL1)",
+        "Swisscom (roaming extension)",
+        "Salt (roaming extension)"
+      ]
+    },
+    {
+      "name": "Lithuania",
+      "value": "LT",
+      "providers": [
+        "Telia Lietuva (formerly Omnitel)",
+        "Tele2",
+        "Bite Lithuania",
+        "LRTC (MEZON, limited 4G)"
+      ]
+    },
+    {
+      "name": "Luxembourg",
+      "value": "LU",
+      "providers": [
+        "POST Luxembourg",
+        "Orange Luxembourg",
+        "Tango",
+        "LOL Mobile (MVNO)"
+      ]
+    },
+    {
+      "name": "Macau",
+      "value": "MO",
+      "providers": [
+        "CTM",
+        "3 (Hutchison)",
+        "China Telecom (Macau)",
+        "SmarTone (Macau)"
+      ]
+    },
+    {
+      "name": "Madagascar",
+      "value": "MG",
+      "providers": [
+        "Telma",
+        "Airtel Madagascar",
+        "Orange Madagascar",
+        "Blueline (limited)",
+        "bip Madagascar (MVNO)"
+      ]
+    },
+    {
+      "name": "Malawi",
+      "value": "MW",
+      "providers": [
+        "TNM",
+        "Airtel Malawi",
+        "Access Telecom (limited)",
+        "G-Mobile (defunct in many areas)",
+        "Lacell (legacy)",
+        "G-Expresso (legacy/uncertain)"
+      ]
+    },
+    {
+      "name": "Malaysia",
+      "value": "MY",
+      "providers": [
+        "Celcom",
+        "Maxis",
+        "Digi",
+        "U Mobile",
+        "Unifi Mobile (Telekom Malaysia)",
+        "Yes 4G",
+        "ALTEL",
+        "TuneTalk (MVNO on Celcom)",
+        "redONE (MVNO on Celcom)",
+        "XOX (MVNO on Celcom)",
+        "Merchantrade (MVNO on Celcom)",
+        "Smart Pinoy (MVNO on Celcom)",
+        "SpeakOut Wireless (MVNO on Digi)",
+        "FRiENDi Mobile (MVNO on U Mobile)",
+        "unifi Mobile (formerly webe, uses Celcom roaming)",
+        "Yoodo (MVNO on Celcom)",
+        "ookyo (MVNO on Maxis)",
+        "Tapp (MVNO on Digi)",
+        "MY Evolution (MVNO on Digi)",
+        "Buzzme (MVNO on U Mobile)",
+        "Telin Malaysia (Kartu As, MVNO on U Mobile)",
+        "Tron (MVNO on Digi)"
+      ]
+    },
+    {
+      "name": "Maldives",
+      "value": "MV",
+      "providers": [
+        "Dhiraagu",
+        "Ooredoo Maldives"
+      ]
+    },
+    {
+      "name": "Mali",
+      "value": "ML",
+      "providers": [
+        "Orange Mali",
+        "Sotelma (Malitel)",
+        "Telecel Mali",
+        "Planor (some legacy references)"
+      ]
+    },
+    {
+      "name": "Malta",
+      "value": "MT",
+      "providers": [
+        "GO",
+        "Epic (formerly Vodafone Malta)",
+        "Melita"
+      ]
+    },
+    {
+      "name": "Marshall Islands",
+      "value": "MH",
+      "providers": [
+        "Marshall Islands National Telecommunications Authority (MINTA)",
+        "NTA (older reference)"
+      ]
+    },
+    {
+      "name": "Mauritania",
+      "value": "MR",
+      "providers": [
+        "Mauritel",
+        "Chinguitel",
+        "Mattel"
+      ]
+    },
+    {
+      "name": "Mauritius",
+      "value": "MU",
+      "providers": [
+        "my.t (Mauritius Telecom)",
+        "Emtel",
+        "Chili",
+        "MTML (Mahanagar Telephone Mauritius Limited)"
+      ]
+    },
+    {
+      "name": "Mexico",
+      "value": "MX",
+      "providers": [
+        "Telcel (América Móvil)",
+        "Movistar (Telefónica)",
+        "AT&T Mexico (includes Unefon)",
+        "Virgin Mobile (MVNO on Movistar)",
+        "Weex (MVNO on Movistar)",
+        "QBO Cel (MVNO on Movistar)",
+        "Cierto (MVNO on Movistar)",
+        "Maz Tiempo (MVNO on Movistar)",
+        "Oui Móvil (MVNO on Telcel)",
+        "Flash Mobile (MVNO on Movistar)",
+        "ALTAN Redes (wholesale 4G LTE network)"
+      ]
+    },
+    {
+      "name": "Micronesia",
+      "value": "FM",
+      "providers": [
+        "FSM Telecommunications Corporation",
+        "FSM Telecom"
+      ]
+    },
+    {
+      "name": "Moldova",
+      "value": "MD",
+      "providers": [
+        "Orange Moldova",
+        "Moldcell",
+        "Unite (Moldtelecom)",
+        "Interdnestrcom (Transnistria region only)"
+      ]
+    },
+    {
+      "name": "Monaco",
+      "value": "MC",
+      "providers": [
+        "Monaco Telecom"
+      ]
+    },
+    {
+      "name": "Mongolia",
+      "value": "MN",
+      "providers": [
+        "MobiCom",
+        "Unitel",
+        "G-Mobile",
+        "Skytel"
+      ]
+    },
+    {
+      "name": "Montenegro",
+      "value": "ME",
+      "providers": [
+        "Crnogorski Telekom (T-Mobile)",
+        "One Montenegro (formerly Telenor)",
+        "m:tel (Telekom Srbija)"
+      ]
+    },
+    {
+      "name": "Montserrat",
+      "value": "MS",
+      "providers": [
+        "FLOW Montserrat",
+        "Digicel Montserrat"
+      ]
+    },
+    {
+      "name": "Morocco",
+      "value": "MA",
+      "providers": [
+        "Maroc Telecom (IAM)",
+        "Orange Maroc",
+        "Inwi"
+      ]
+    },
+    {
+      "name": "Mozambique",
+      "value": "MZ",
+      "providers": [
+        "Vodacom Mozambique",
+        "Tmcel (Mcel + TDM)",
+        "Movitel"
+      ]
+    },
+    {
+      "name": "Myanmar",
+      "value": "MM",
+      "providers": [
+        "MPT",
+        "Ooredoo Myanmar",
+        "Telenor Myanmar",
+        "Mytel (Viettel)"
+      ]
+    },
+    {
+      "name": "Namibia",
+      "value": "NA",
+      "providers": [
+        "MTC Namibia",
+        "TN Mobile (Telecom Namibia, formerly Cell One / Leo)",
+        "Paratus (limited mobile services)"
+      ]
+    },
+    {
+      "name": "Nauru",
+      "value": "NR",
+      "providers": [
+        "Digicel Nauru",
+        "Nauru Telecom"
+      ]
+    },
+    {
+      "name": "Nepal",
+      "value": "NP",
+      "providers": [
+        "Nepal Telecom (NTC)",
+        "Ncell (Axiata)",
+        "Smart Cell (Smart Telecom)"
+      ]
+    },
+    {
+      "name": "Netherlands",
+      "value": "NL",
+      "providers": [
+        "KPN (includes former Telfort)",
+        "Vodafone Netherlands (formerly Libertel)",
+        "T-Mobile Netherlands (formerly Ben, includes former Orange NL)",
+        "Tele2 (now part of T-Mobile)",
+        "Various MVNOs (hollandsnieuwe, Simyo, etc.)"
+      ]
+    },
+    {
+      "name": "New Caledonia",
+      "value": "NC",
+      "providers": [
+        "Mobilis"
+      ]
+    },
+    {
+      "name": "New Zealand",
+      "value": "NZ",
+      "providers": [
+        "Spark (formerly Telecom NZ)",
+        "Vodafone New Zealand (soon One NZ)",
+        "2degrees",
+        "Skinny (MVNO on Spark)",
+        "Warehouse Mobile (MVNO on 2degrees)",
+        "Slingshot (MVNO on Spark)",
+        "Compass Mobile (MVNO on Spark)",
+        "Black+White (legacy, was MVNO on Vodafone)"
+      ]
+    },
+    {
+      "name": "Nicaragua",
+      "value": "NI",
+      "providers": [
+        "Tigo (Millicom)",
+        "Claro (América Móvil)"
+      ]
+    },
+    {
+      "name": "Niger",
+      "value": "NE",
+      "providers": [
+        "Airtel Niger",
+        "Moov Africa Niger",
+        "Orange Niger",
+        "Telecom Niger (state-run, limited)"
+      ]
+    },
+    {
+      "name": "Nigeria",
+      "value": "NG",
+      "providers": [
+        "MTN Nigeria",
+        "Airtel Nigeria (formerly Zain)",
+        "Glo (Globacom)",
+        "9mobile (formerly Etisalat)",
+        "Visafone (CDMA, now partially integrated)"
+      ]
+    },
+    {
+      "name": "Niue",
+      "value": "NU",
+      "providers": [
+        "Telecom Niue"
+      ]
+    },
+    {
+      "name": "Norfolk Island",
+      "value": "NF",
+      "providers": [
+        "Norfolk Telecom"
+      ]
+    },
+    {
+      "name": "North Korea",
+      "value": "KP",
+      "providers": [
+        "Koryolink",
+        "Byol",
+        "Kang Song Net"
+      ]
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "value": "MP",
+      "providers": [
+        "Docomo Pacific",
+        "IT&E"
+      ]
+    },
+    {
+      "name": "North Macedonia",
+      "value": "MK",
+      "providers": [
+        "Makedonski Telekom (formerly T-Mobile MK, Mobimak)",
+        "A1 Macedonia (formerly Vip)",
+        "Lycamobile (MVNO)"
+      ]
+    },
+    {
+      "name": "Norway",
+      "value": "NO",
+      "providers": [
+        "Telenor",
+        "Telia Norway (formerly NetCom, includes former Tele2)",
+        "Ice",
+        "Chili (MVNO)"
+      ]
+    },
+    {
+      "name": "Oman",
+      "value": "OM",
+      "providers": [
+        "Omantel",
+        "Ooredoo Oman (formerly Nawras)",
+        "Vodafone Oman"
+      ]
+    },
+    {
+      "name": "Pakistan",
+      "value": "PK",
+      "providers": [
+        "Jazz (Mobilink + Warid)",
+        "Telenor Pakistan",
+        "Zong (China Mobile)",
+        "Ufone (PTCL)",
+        "SCO (Special Communications Organization, in Gilgit-Baltistan/AJK)"
+      ]
+    },
+    {
+      "name": "Palau",
+      "value": "PW",
+      "providers": [
+        "Palau National Communications Corporation (PNCC)",
+        "PalauCel",
+        "Bluesky Palau (limited info)"
+      ]
+    },
+    {
+      "name": "Palestine",
+      "value": "PS",
+      "providers": [
+        "Jawwal (Paltel Group)",
+        "Ooredoo Palestine (formerly Wataniya Mobile)"
+      ]
+    },
+    {
+      "name": "Panama",
+      "value": "PA",
+      "providers": [
+        "Tigo (Millicom)",
+        "Claro (América Móvil)",
+        "Movistar (Telefónica)",
+        "Cable & Wireless (Mas Móvil)"
+      ]
+    },
+    {
+      "name": "Papua New Guinea",
+      "value": "PG",
+      "providers": [
+        "Digicel PNG",
+        "Telikom PNG",
+        "bmobile-Vodafone"
+      ]
+    },
+    {
+      "name": "Paraguay",
+      "value": "PY",
+      "providers": [
+        "Tigo (Millicom)",
+        "Claro (América Móvil)",
+        "Personal (Telecom Argentina)",
+        "VOX"
+      ]
+    },
+    {
+      "name": "Peru",
+      "value": "PE",
+      "providers": [
+        "Movistar (Telefónica)",
+        "Claro (América Móvil)",
+        "Entel Peru (formerly Nextel)",
+        "Bitel (Viettel)",
+        "Virgin Mobile (MVNO on Movistar)"
+      ]
+    },
+    {
+      "name": "Philippines",
+      "value": "PH",
+      "providers": [
+        "Globe Telecom (includes TM, Cherry Prepaid, ABS-CBN Mobile legacy)",
+        "Smart Communications (PLDT) (includes TNT, Sun Cellular)",
+        "DITO Telecommunity",
+        "Red Mobile (legacy, integrated)"
+      ]
+    },
+    {
+      "name": "Poland",
+      "value": "PL",
+      "providers": [
+        "Orange Polska (formerly Idea)",
+        "Play (P4)",
+        "Plus (Polkomtel)",
+        "T-Mobile Polska (formerly Era)",
+        "Various MVNOs (e.g. Virgin Mobile PL)"
+      ]
+    },
+    {
+      "name": "Portugal",
+      "value": "PT",
+      "providers": [
+        "MEO (Altice, formerly TMN)",
+        "NOS (formerly Optimus + ZON)",
+        "Vodafone Portugal (formerly Telecel)",
+        "NOWO (MVNO)"
+      ]
+    },
+    {
+      "name": "Puerto Rico & United States Virgin Islands",
+      "value": "PR/VI",
+      "providers": [
+        "Claro",
+        "T-Mobile",
+        "AT&T",
+        "Sprint (now merged into T-Mobile)",
+        "Open Mobile (legacy, merged into Sprint)",
+        "Choice Communications (local)",
+        "TracFone Wireless (MVNO/Prepaid aggregator)"
+      ]
+    },
+    {
+      "name": "Qatar",
+      "value": "QA",
+      "providers": [
+        "Ooredoo Qatar (formerly Qtel)",
+        "Vodafone Qatar"
+      ]
+    },
+    {
+      "name": "Romania",
+      "value": "RO",
+      "providers": [
+        "Orange Romania (formerly Dialog)",
+        "Vodafone Romania (formerly Connex)",
+        "Digi Mobil (RCS & RDS)",
+        "Telekom Romania (in transition, parts sold to Orange)"
+      ]
+    },
+    {
+      "name": "Russia",
+      "value": "RU",
+      "providers": [
+        "MTS",
+        "MegaFon",
+        "Beeline (VEON)",
+        "Tele2 Russia",
+        "Yota (MVNO under MegaFon)",
+        "Sotovaja Svjaz MOTIV (regional)",
+        "SMARTS (regional)",
+        "Tattelecom (regional)",
+        "Vainahtelecom (Chechnya region)",
+        "Sotovaja Svjaz Bashkortostana (SSB)",
+        "Rostelecom (MVNO/merger in places)"
+      ]
+    },
+    {
+      "name": "Rwanda",
+      "value": "RW",
+      "providers": [
+        "MTN Rwanda",
+        "Airtel Rwanda (merged Tigo)",
+        "Rwandatel (legacy, defunct in mobile)"
+      ]
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "value": "KN",
+      "providers": [
+        "Digicel",
+        "Flow (Cable & Wireless)",
+        "Chippie (regional, if any)"
+      ]
+    },
+    {
+      "name": "Saint Lucia",
+      "value": "LC",
+      "providers": [
+        "Digicel",
+        "Flow (Cable & Wireless)"
+      ]
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "value": "VC",
+      "providers": [
+        "Digicel",
+        "Flow (Cable & Wireless)"
+      ]
+    },
+    {
+      "name": "Samoa",
+      "value": "WS",
+      "providers": [
+        "Vodafone Samoa (formerly Bluesky)",
+        "Digicel Samoa"
+      ]
+    },
+    {
+      "name": "San Marino",
+      "value": "SM",
+      "providers": [
+        "Telefonia Mobile Sammarinese (TIM San Marino)",
+        "Vodafone (roaming/extension from Italy)",
+        "San Marino Telecom (SMT)"
+      ]
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "value": "ST",
+      "providers": [
+        "CST (Companhia Santomense de Telecomunicações)",
+        "Unitel STP (Viettel)"
+      ]
+    },
+    {
+      "name": "Saudi Arabia",
+      "value": "SA",
+      "providers": [
+        "STC (Saudi Telecom Company)",
+        "Mobily (Etisalat)",
+        "Zain KSA",
+        "Salam (Integrated Telecom, fixed+MVNO)",
+        "Virgin Mobile KSA (MVNO on STC)",
+        "Lebara KSA (MVNO)"
+      ]
+    },
+    {
+      "name": "Senegal",
+      "value": "SN",
+      "providers": [
+        "Orange Senegal (Sonatel)",
+        "Free Senegal (formerly Tigo)",
+        "Expresso",
+        "Hayo Telecom (MVNO on Orange, limited)"
+      ]
+    },
+    {
+      "name": "Serbia",
+      "value": "RS",
+      "providers": [
+        "Telekom Srbija (mts)",
+        "Yettel (formerly Telenor)",
+        "A1 Serbia (formerly Vip mobile)"
+      ]
+    },
+    {
+      "name": "Seychelles",
+      "value": "SC",
+      "providers": [
+        "Airtel Seychelles",
+        "Cable & Wireless Seychelles",
+        "Intelvision (limited mobile services)"
+      ]
+    },
+    {
+      "name": "Sierra Leone",
+      "value": "SL",
+      "providers": [
+        "Africell",
+        "Orange (formerly Airtel)",
+        "Sierratel (CDMA/limited)",
+        "Comium (status varies)",
+        "GreenN (legacy, uncertain)"
+      ]
+    },
+    {
+      "name": "Singapore",
+      "value": "SG",
+      "providers": [
+        "Singtel",
+        "StarHub",
+        "M1",
+        "TPG Telecom",
+        "GRID (legacy iDEN)",
+        "Circles.Life (MVNO on M1)",
+        "Zero Mobile (MVNO on Singtel, brand changes)",
+        "Zero1 (MVNO on Singtel)",
+        "MyRepublic (MVNO on StarHub)",
+        "GOMO (Singtel sub-brand)",
+        "Giga! (StarHub sub-brand)",
+        "RedONE (MVNO on StarHub)"
+      ]
+    },
+    {
+      "name": "Slovakia",
+      "value": "SK",
+      "providers": [
+        "Orange Slovakia (formerly Globtel)",
+        "Slovak Telekom (T-Mobile, formerly EuroTel)",
+        "O2 Slovakia",
+        "4ka / SWAN Mobile"
+      ]
+    },
+    {
+      "name": "Slovenia",
+      "value": "SI",
+      "providers": [
+        "Telekom Slovenije (formerly Mobitel)",
+        "A1 Slovenia (formerly Si.mobil)",
+        "Telemach (formerly Tušmobil)",
+        "T-2"
+      ]
+    },
+    {
+      "name": "Solomon Islands",
+      "value": "SB",
+      "providers": [
+        "Our Telekom (Solomon Telekom)",
+        "Bemobile (Vodafone Partnership)"
+      ]
+    },
+    {
+      "name": "Somalia",
+      "value": "SO",
+      "providers": [
+        "Hormuud",
+        "Somtel",
+        "Golis",
+        "Telesom (Somaliland region)",
+        "Netco",
+        "Somafone",
+        "Nationlink",
+        "Telcom Somalia"
+      ]
+    },
+    {
+      "name": "South Africa",
+      "value": "ZA",
+      "providers": [
+        "Vodacom",
+        "MTN",
+        "Cell C",
+        "Telkom Mobile",
+        "Rain (data-focused)"
+      ]
+    },
+    {
+      "name": "South Korea",
+      "value": "KR",
+      "providers": [
+        "SK Telecom",
+        "KT (formerly Olleh, KTF)",
+        "LG U+ (formerly LG Telecom)"
+      ]
+    },
+    {
+      "name": "South Sudan",
+      "value": "SS",
+      "providers": [
+        "Zain South Sudan",
+        "MTN South Sudan",
+        "Digitel (limited info)",
+        "Gemtel (uncertain status)",
+        "Sudani (possible partial coverage)"
+      ]
+    },
+    {
+      "name": "Spain",
+      "value": "ES",
+      "providers": [
+        "Movistar (Telefónica)",
+        "Orange Spain (formerly Amena)",
+        "Vodafone Spain (formerly Airtel)",
+        "Yoigo (MásMóvil)"
+      ]
+    },
+    {
+      "name": "Sri Lanka",
+      "value": "LK",
+      "providers": [
+        "Dialog Axiata",
+        "Mobitel (SLT)",
+        "Hutch (formerly CallLink, Warid, Etisalat)",
+        "Airtel Sri Lanka"
+      ]
+    },
+    {
+      "name": "Sudan",
+      "value": "SD",
+      "providers": [
+        "Zain Sudan",
+        "MTN Sudan",
+        "Sudani (Sudatel)",
+        "Canar (fixed/wireless, partial mobile data)"
+      ]
+    },
+    {
+      "name": "Suriname",
+      "value": "SR",
+      "providers": [
+        "Telesur",
+        "Digicel Suriname"
+      ]
+    },
+    {
+      "name": "Swaziland (Eswatini)",
+      "value": "SZ",
+      "providers": [
+        "MTN Eswatini"
+      ]
+    },
+    {
+      "name": "Sweden",
+      "value": "SE",
+      "providers": [
+        "Telia",
+        "Tele2",
+        "Telenor",
+        "3 (Tre)"
+      ]
+    },
+    {
+      "name": "Switzerland",
+      "value": "CH",
+      "providers": [
+        "Swisscom",
+        "Sunrise",
+        "Salt (formerly Orange)",
+        "Wingo (MVNO under Swisscom)"
+      ]
+    },
+    {
+      "name": "Syria",
+      "value": "SY",
+      "providers": [
+        "Syriatel",
+        "MTN Syria (operations subject to change)"
+      ]
+    },
+    {
+      "name": "Taiwan",
+      "value": "TW",
+      "providers": [
+        "Chunghwa Telecom",
+        "Taiwan Mobile",
+        "FarEasTone",
+        "T Star (Taiwan Star)",
+        "Asia Pacific Telecom (GT 4G)"
+      ]
+    },
+    {
+      "name": "Tajikistan",
+      "value": "TJ",
+      "providers": [
+        "Tcell (Aga Khan Fund & Telia)",
+        "Babilon-Mobile",
+        "MegaFon Tajikistan",
+        "Beeline (VEON)",
+        "MLT (limited/legacy)"
+      ]
+    },
+    {
+      "name": "Tanzania",
+      "value": "TZ",
+      "providers": [
+        "Vodacom Tanzania",
+        "Airtel Tanzania",
+        "Tigo (Millicom)",
+        "Halotel (Viettel)",
+        "Zantel (part of Tigo)",
+        "TTCL Mobile",
+        "Benson Informatics (limited)",
+        "MyCell (limited)",
+        "Excellentcom (limited)",
+        "Egotel (Lacell)",
+        "Smart (defunct or limited)",
+        "Smile Communications (data)"
+      ]
+    },
+    {
+      "name": "Thailand",
+      "value": "TH",
+      "providers": [
+        "AIS",
+        "TrueMove H",
+        "dtac (includes LINE Mobile)",
+        "National Telecom (NT, merged TOT + CAT)",
+        "MY (MVNO TOT)",
+        "Buzzme (MVNO TOT)",
+        "i-Kool (MVNO TOT)",
+        "Open (MVNO CAT)",
+        "Mojo (MVNO TOT)",
+        "168 (MVNO MY)",
+        "My World 3G (MVNO MY)",
+        "Penguin (MVNO MY)"
+      ]
+    },
+    {
+      "name": "Timor-Leste",
+      "value": "TL",
+      "providers": [
+        "Timor Telecom",
+        "Telkomcel (Telkom Indonesia)",
+        "Telemor (Viettel)"
+      ]
+    },
+    {
+      "name": "Togo",
+      "value": "TG",
+      "providers": [
+        "Togocom",
+        "Moov Africa Togo"
+      ]
+    },
+    {
+      "name": "Tonga",
+      "value": "TO",
+      "providers": [
+        "Digicel Tonga",
+        "U-Call (Tonga Communications Corp.)",
+        "TCC (legacy name overlap)"
+      ]
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "value": "TT",
+      "providers": [
+        "TSTT (bmobile)",
+        "Digicel Trinidad & Tobago"
+      ]
+    },
+    {
+      "name": "Tunisia",
+      "value": "TN",
+      "providers": [
+        "Tunisie Telecom",
+        "Ooredoo Tunisia (formerly Tunisiana)",
+        "Orange Tunisia"
+      ]
+    },
+    {
+      "name": "Turkey",
+      "value": "TR",
+      "providers": [
+        "Turkcell",
+        "Vodafone Turkey (formerly Telsim)",
+        "Türk Telekom (formerly Avea, Aria, Aycell)"
+      ]
+    },
+    {
+      "name": "Turkmenistan",
+      "value": "TM",
+      "providers": [
+        "TM-Cell (Altyn Asyr)",
+        "MTS Turkmenistan"
+      ]
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "value": "TC",
+      "providers": [
+        "Digicel",
+        "FLOW (acquired Islandcom Wireless)"
+      ]
+    },
+    {
+      "name": "Tuvalu",
+      "value": "TV",
+      "providers": [
+        "Tuvalu Telecommunications Corporation (TTC)"
+      ]
+    },
+    {
+      "name": "Uganda",
+      "value": "UG",
+      "providers": [
+        "MTN Uganda",
+        "Airtel Uganda",
+        "Uganda Telecom (UTL)",
+        "Lycamobile (MVNO; limited)",
+        "Smile (data-focused)",
+        "Africell (operations ended mid-2022, legacy references)",
+        "Warid (bought by Airtel, legacy references)",
+        "Essar (legacy, integrated)"
+      ]
+    },
+    {
+      "name": "Ukraine",
+      "value": "UA",
+      "providers": [
+        "Kyivstar",
+        "Vodafone Ukraine (formerly MTS)",
+        "lifecell (formerly Life, Turkcell group)",
+        "3mob (Ukrtelecom)",
+        "PEOPLEnet (CDMA, limited)",
+        "Intertelecom (CDMA, regional)"
+      ]
+    },
+    {
+      "name": "United Arab Emirates",
+      "value": "AE",
+      "providers": [
+        "Etisalat",
+        "du",
+        "Virgin Mobile (MVNO on du)"
+      ]
+    },
+    {
+      "name": "United Kingdom",
+      "value": "GB",
+      "providers": [
+        "EE (includes Orange UK & T-Mobile UK)",
+        "O2 (Telefónica UK)",
+        "Vodafone UK",
+        "Three UK",
+        "Numerous MVNOs (giffgaff, Tesco Mobile, Virgin Mobile, Sky Mobile, etc.)"
+      ]
+    },
+    {
+      "name": "United States",
+      "value": "US",
+      "providers": [
+        "Verizon Wireless",
+        "AT&T Mobility (includes Cricket Wireless)",
+        "T-Mobile (merged with Sprint, includes Metro by T-Mobile, Boost Mobile, Virgin Mobile USA legacy)",
+        "U.S. Cellular (regional)",
+        "TracFone Wireless & subsidiaries (Straight Talk, Net10, Total, etc.)"
+      ]
+    },
+    {
+      "name": "Uruguay",
+      "value": "UY",
+      "providers": [
+        "Antel",
+        "Movistar (Telefónica)",
+        "Claro (América Móvil)"
+      ]
+    },
+    {
+      "name": "Uzbekistan",
+      "value": "UZ",
+      "providers": [
+        "Ucell (Telia, formerly Coscom)",
+        "Beeline Uzbekistan (VEON)",
+        "Mobiuz (UMS)",
+        "Uzmobile",
+        "Perfectum (regional CDMA/GSM)"
+      ]
+    },
+    {
+      "name": "Vanuatu",
+      "value": "VU",
+      "providers": [
+        "Digicel Vanuatu",
+        "Vodafone Vanuatu (formerly TVL)",
+        "AIL (limited)",
+        "WanTok (MVNO/data?)"
+      ]
+    },
+    {
+      "name": "Vatican City",
+      "value": "VA",
+      "providers": [
+        "Vatican Telecom (limited local service)",
+        "Roaming from Italian networks (TIM, Vodafone, WINDTRE, Iliad)"
+      ]
+    },
+    {
+      "name": "Venezuela",
+      "value": "VE",
+      "providers": [
+        "Movilnet",
+        "Movistar (Telefónica)",
+        "Digitel GSM"
+      ]
+    },
+    {
+      "name": "Vietnam",
+      "value": "VN",
+      "providers": [
+        "Viettel",
+        "MobiFone",
+        "Vinaphone",
+        "Vietnamobile",
+        "Gmobile (formerly Beeline)",
+        "S-Fone (CDMA, largely defunct)"
+      ]
+    },
+    {
+      "name": "Yemen",
+      "value": "YE",
+      "providers": [
+        "Yemen Mobile (CDMA)",
+        "Sabafon",
+        "MTN Yemen (rebranded to Y Telecom in some areas)",
+        "HiTS-Unitel (Y Telecom in south, limited coverage)",
+        "Spacetel (legacy references)"
+      ]
+    },
+    {
+      "name": "Zambia",
+      "value": "ZM",
+      "providers": [
+        "Zamtel",
+        "MTN Zambia",
+        "Airtel Zambia"
+      ]
+    },
+    {
+      "name": "Zimbabwe",
+      "value": "ZW",
+      "providers": [
+        "Econet Wireless",
+        "NetOne",
+        "Telecel Zimbabwe"
+      ]
+    }
+  ]
+  

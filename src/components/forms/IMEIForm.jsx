@@ -3,31 +3,25 @@
 import React, { useState } from 'react'
 import countries from '../../data/countries.json'
 import { z } from "zod";
+import { validateIMEI } from '@/actions/imei'
 
 function IMEIForm({ form, setForm, setShowPaymentForm }) {
     // Form schema
     const FormSchema = z.object({
-        country: z.string().min(1, { message: "Country is required" }),
+        country: z.object({
+            name: z.string().min(1, { message: "Country is required" }),
+            providers: z.array(z.string()),
+        }),
         network: z.string().min(1, { message: "Network is required" }),
         imei: z.string()
             .min(15, { message: "IMEI must be exactly 15 digits long" })
             .max(15, { message: "IMEI must be exactly 15 digits long" })
-            .refine(value => {
-                const digits = value.split('').map(Number);
-                const sum = digits.reduce((acc, digit, index) => {
-                    if (index % 2 === 1) {
-                        const doubled = digit * 2;
-                        return acc + (doubled > 9 ? doubled - 9 : doubled);
-                    }
-                    return acc + digit;
-                }, 0);
-                return sum % 10 === 0;
-            }, { message: "IMEI must be a valid 15-digit number" })
+            .refine(value => validateIMEI(value), { message: "IMEI must be a valid 15-digit number" })
     })
 
     // Form data
     const [formData, setFormData] = useState({
-        country: form?.country ?? '',
+        country: form?.country ?? { name: '', providers: [] },
         network: form?.network ?? '',
         imei: form?.imei ?? ''
     });
@@ -42,10 +36,10 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
     // Handle input change
     const handleInputChange = (event) => {
         const { name, value } = event.target;
-        setFormData({ ...formData, [name]: value });
-
+        const fieldData = name === 'country' ? countries.find(country => country.name === value) : value;
+        setFormData({ ...formData, [name]: fieldData });
         try {
-            FormSchema.pick({ [name]: true }).parse({ [name]: value });
+            FormSchema.pick({ [name]: true }).parse({ [name]: fieldData });
             setErrors({ ...errors, [name]: false });
         } catch (e) {
             setErrors({ ...errors, [name]: true });
@@ -70,6 +64,20 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
         }
     }
 
+    // Reset form
+    const handleResetForm = () => {
+        setFormData({
+            country: { name: '', providers: [] },
+            network: '',
+            imei: ''
+        });
+        setErrors({
+            country: false,
+            network: false,
+            imei: false
+        });
+    }
+
     return (
         <form onSubmit={handleFormSubmit} className="w-full space-y-4 max-h-[300px]">
             <div>
@@ -84,9 +92,10 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
                         <select
                             id="country"
                             name="country"
-                            value={formData.country}
+                            value={formData.country?.name ?? ''}
                             onChange={handleInputChange}
                             className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors.country ? 'outline-red-500' : 'outline-gray-300'} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 h-[35px]`}
+                            autoFocus
                         >
                             <option value="">Select Country</option>
                             {countries.map((country) => (
@@ -109,12 +118,14 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
                             name="network"
                             value={formData.network}
                             onChange={handleInputChange}
-                            className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors.network ? 'outline-red-500' : 'outline-gray-300'} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 h-[35px]`}
+                            disabled={!formData.country?.name}
+                            className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors.network ? 'outline-red-500' : 'outline-gray-300'} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 h-[35px] ${!formData.country?.name ? 'cursor-not-allowed opacity-50' : ''}`}
+                            title={!formData.country?.name ? "Please select a country first" : ""}
                         >
                             <option value="">Select Network</option>
-                            <option value="o2">O2</option>
-                            <option value="ee">EE</option>
-                            <option value="vodafone">Vodafone</option>
+                            {formData.country?.providers?.sort().map((provider) => (
+                                <option key={provider} value={provider}>{provider}</option>
+                            ))}
                         </select>
                         {errors.network && (
                             <p className="text-red-500 text-sm mt-1">
@@ -161,6 +172,17 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
             >
                 Unlock
             </button>
+
+            {/* Reset form link */}
+            {(formData.country.name !== '' || formData.network !== '' || formData.imei !== '') && (
+                <a
+                    href="#"
+                    onClick={handleResetForm}
+                    className="text-red-600 hover:text-red-700 mt-2 block text-center text-xs"
+                >
+                    Reset
+                </a>
+            )}
         </form>
     )
 }

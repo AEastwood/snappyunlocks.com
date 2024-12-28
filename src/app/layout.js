@@ -2,6 +2,7 @@ import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import { headers } from 'next/headers';
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import ErrorPage from "@/components/ErrorPage";
 
 const geistSans = Geist({
@@ -27,23 +28,24 @@ export default async function RootLayout({ children }) {
   if (requestHeaders.get('host') === 'snappyunlocks.com') {
     return <ErrorPage code={503} text="Service Unavailable" />;
   }
-  
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div
-          className="mx-auto px-5"
+          className="mx-auto"
           style={{
             background: 'linear-gradient(30deg, rgba(82, 109, 255, 0.9) 0%, rgba(118, 82, 165, 1) 100%)',
-            filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#6274E7", endColorstr="#8752A3", GradientType=1)',
-            animation: 'gradientAnimation 10s ease infinite',
           }}
         >
-          <div className="max-w-7xl mx-auto">
-            <Header />
+          <div className="w-full mx-auto">
+            <div className="max-w-7xl px-5 mx-auto">
+              <Header />
+            </div>
             {children}
+            <Footer />
           </div>
         </div>
       </body>

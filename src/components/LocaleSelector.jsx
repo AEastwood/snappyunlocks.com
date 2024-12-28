@@ -2,6 +2,7 @@
 
 import { countries } from '@/data/locale';
 import { useEffect, useRef, useState } from "react";
+import { getCookie, setCookie } from 'cookies-next';
 
 function LocaleSelector() {
     const defaultCountry = countries.find(country => country.name === "United States");
@@ -12,8 +13,8 @@ function LocaleSelector() {
 
     // This function updates the locale storage with the selected country and locale.
     const updateLocaleStorage = (country) => {
-        localStorage.setItem("country", country.name);
-        localStorage.setItem("locale", country.locale);
+        setCookie('country', country.name, { maxAge: 60 * 60 * 24 * 365 }); // 1 year
+        setCookie('locale', country.locale, { maxAge: 60 * 60 * 24 * 365 });
     };
 
     // This function closes the dropdown if the user clicks outside of it.
@@ -39,10 +40,13 @@ function LocaleSelector() {
 
     useEffect(() => {
         const initializeLocale = () => {
-            const storedLocale = window.localStorage.getItem("locale");
+            // Get the cookie value using getCookie
+            const storedLocale = getCookie('locale');
+
             const matchedCountry = countries.find(
                 (country) => country.locale === storedLocale
             ) || defaultCountry;
+            
             setSelectedLocale(matchedCountry.name);
             updateLocaleStorage(matchedCountry);
             setIsLoading(false);

@@ -1,10 +1,10 @@
 'use client'
 
 import React, { useState } from 'react'
-import IMEIForm from '@/components/forms/IMEIForm'
 import PaymentForm from '@/components/forms/PaymentForm'
+import IMEIForm from '@/components/forms/IMEIForm'
 
-function Hero() {
+function UnlockHero() {
     const [form, setForm] = useState(null);
     const [showPaymentForm, setShowPaymentForm] = useState(false);
     
@@ -52,4 +52,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default UnlockHero

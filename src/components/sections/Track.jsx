@@ -72,7 +72,7 @@ function Track({ id }) {
                 <span className="text-white">
                     Finished? {' '}
 
-                    <Link href="/" className="text-white hover:underline">
+                    <Link href="/" className="text-rose-400">
                         Unlock another phone
                     </Link>
                 </span>
