@@ -179,6 +179,7 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
                     href="#"
                     onClick={handleResetForm}
                     className="text-red-600 hover:text-red-700 mt-2 block text-center text-xs"
+                    title="Reset"
                 >
                     Reset
                 </a>

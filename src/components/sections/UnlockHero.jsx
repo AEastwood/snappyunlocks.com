@@ -13,6 +13,7 @@ function UnlockHero() {
             <img
                 className="w-2/5 hidden lg:block transform scale-85 relative"
                 src="https://static.vecteezy.com/system/resources/previews/050/590/603/non_2x/smiling-woman-in-casual-outfit-holding-smartphone-and-looking-at-screen-free-png.png"
+                draggable="false"
             />
 
             <div className="flex flex-col gap-4 w-full lg:w-3/5 px-12 lg:px-0 lg:pr-24 my-auto">
