@@ -11,7 +11,7 @@ function UnlockHero() {
     return (
         <div className="max-w-7xl mx-auto pt-12 flex flex-col lg:flex-row justify-between min-h-[560px]">
             <img
-                className="w-2/5 hidden lg:block transform scale-85 relative"
+                className="w-2/5 hidden lg:block transform scale-85 relative select-none"
                 src="https://static.vecteezy.com/system/resources/previews/050/590/603/non_2x/smiling-woman-in-casual-outfit-holding-smartphone-and-looking-at-screen-free-png.png"
                 draggable="false"
             />
