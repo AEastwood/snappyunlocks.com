@@ -79,16 +79,16 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
     }
 
     return (
-        <form onSubmit={handleFormSubmit} className="w-full space-y-4 max-h-[300px]">
+        <form onSubmit={handleFormSubmit} className="w-full space-y-4 max-h-[350px]">
             <div>
-                <label
-                    htmlFor="network"
-                    className="block text-gray-700 font-medium mb-1"
-                >
-                    Select your network
-                </label>
-                <div className="flex space-x-2">
-                    <div className="w-1/2">
+                <div className="flex flex-col lg:flex-row gap-4">
+                    <div className="w-full lg:w-1/2">
+                        <label
+                            htmlFor="network"
+                            className="block text-gray-700 font-medium mb-1"
+                        >
+                            Select your Country
+                        </label>
                         <select
                             id="country"
                             name="country"
@@ -111,7 +111,14 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
                         )}
                     </div>
 
-                    <div className="w-1/2">
+
+                    <div className="w-full lg:w-1/2">
+                        <label
+                            htmlFor="network"
+                            className="block text-gray-700 font-medium mb-1"
+                        >
+                            Select your network
+                        </label>
                         <select
                             id="network"
                             name="network"
@@ -136,7 +143,7 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
             </div>
 
             {/* IMEI input */}
-            <div>
+            <div className="w-full">
                 <label
                     htmlFor="imei"
                     className="block text-gray-700 font-medium mb-1"

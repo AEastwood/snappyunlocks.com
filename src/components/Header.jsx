@@ -93,9 +93,22 @@ function Header() {
                             </button>
                         </div>
 
-                        <div className="mt-6 bg-red-500">
-                            <Link href="#" className="block text-base font-semibold text-gray-900">
-                                Features
+                        <div className="flex flex-col gap-4 mt-6">
+                            <Link
+                                href="/"
+                                className="block text-base font-semibold text-gray-900"
+                                title="Unlock My Phone"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                Unlock My Phone
+                            </Link>
+                            <Link
+                                href="/track"
+                                className="block text-base font-semibold text-gray-900"
+                                title="Track Order"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                Track Order
                             </Link>
                         </div>
                     </div>

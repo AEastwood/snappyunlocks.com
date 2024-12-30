@@ -3,12 +3,12 @@
 import React, { useState } from 'react'
 import { z } from "zod";
 
-function TrackOrderForm({ id }) {
+function TrackOrderForm({ id, setForm, setOrder }) {
     // Form schema
     const FormSchema = z.object({
-        orderNumber: z.string()
-            .min(1, { message: "Order number is required" })
-            .regex(/^\d+$/, { message: "Order number must be numeric" }),
+        order: z.string()
+            .min(1, { message: "Order is required" })
+            .regex(/^\d+$/, { message: "Order must be numeric" }),
         email: z.string()
             .min(1, { message: "Email is required" })
             .email({ message: "Email must be a valid email address" })
@@ -16,24 +16,23 @@ function TrackOrderForm({ id }) {
 
     // Form data
     const [formData, setFormData] = useState({
-        orderNumber: id ?? '',
+        order: id ?? '',
         email: ''
     });
 
     // Form errors
     const [errors, setErrors] = useState({
-        orderNumber: false,
+        order: false,
         email: false
     });
 
     // Handle input change
-    const handleInputChange = (event) => {
+    const handleInputChange = async (event) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });
 
         try {
             FormSchema.pick({ [name]: true }).parse({ [name]: value });
-            setErrors({ ...errors, [name]: false });
         } catch (e) {
             setErrors({ ...errors, [name]: true });
         }
@@ -44,13 +43,11 @@ function TrackOrderForm({ id }) {
         event.preventDefault();
         try {
             FormSchema.parse(formData);
-            // Assuming setForm and setShowPaymentForm are defined elsewhere
             setForm(formData);
-            setShowPaymentForm(true);
         } catch (e) {
             const validationErrors = {};
 
-            e.errors.forEach(error => {
+            e.errors?.forEach(error => {
                 validationErrors[error.path[0]] = true;
             });
 
@@ -62,25 +59,25 @@ function TrackOrderForm({ id }) {
         <form onSubmit={handleFormSubmit} className="w-full space-y-4 max-h-[300px]">
             <div>
                 <label
-                    htmlFor="orderNumber"
+                    htmlFor="order"
                     className="block text-gray-700 font-medium mb-1"
                 >
-                    Order Number
+                    Order
                 </label>
 
                 <input
                     type="text"
-                    name="orderNumber"
-                    id="orderNumber"
-                    value={formData.orderNumber}
+                    name="order"
+                    id="order"
+                    value={formData.order}
                     onChange={handleInputChange}
-                    placeholder="Order Number"
-                    className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors.orderNumber ? 'outline-red-500' : 'outline-gray-300'} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 h-[35px]`}
+                    placeholder="Order"
+                    className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors.order ? 'outline-red-500' : 'outline-gray-300'} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 h-[35px]`}
                 />
 
-                {errors.orderNumber && (
+                {errors.order && (
                     <p className="text-red-500 text-sm mt-1">
-                        Please enter a valid order number.
+                        Please enter a valid order.
                     </p>
                 )}
             </div>

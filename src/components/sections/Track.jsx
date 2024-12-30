@@ -6,14 +6,14 @@ import TrackOrderForm from '../forms/TrackOrderForm';
 
 function Track({ id }) {
     const [form, setForm] = useState(null);
-    const [orderStatus, setOrderStatus] = useState('none');
     const [order, setOrder] = useState({
-        orderNumber: id ?? '',
+        status: 'none',
+        reference: id ?? '',
         email: '',
     });
 
     return (
-        <div className="max-w-7xl mx-auto pt-12 flex flex-col justify-between min-h-[560px]">
+        <div className="max-w-7xl mx-auto pt-12 flex flex-col min-h-[560px]">
             <div className="flex flex-col gap-4 w-2/3 m-auto">
                 <div className="w-full space-y-4 text-white mt-auto text-sm">
                     <div className="flex flex-col lg:flex-row gap-4">
@@ -34,9 +34,9 @@ function Track({ id }) {
 
                 {/* IMEI Form */}
                 <div className="transition-opacity duration-500 bg-white rounded-lg shadow p-6">
-                    {(orderStatus === 'none' || orderStatus === 'not_found') && (
+                    {(order.status === 'none' || order.status === 'not_found') && (
                         <>
-                            {orderStatus === 'not_found' && (
+                            {order.status === 'not_found' && (
                                 <div className="flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50">
                                     <svg
                                         className="flex-shrink-0 inline w-4 h-4 me-3"
@@ -55,11 +55,11 @@ function Track({ id }) {
                                 </div>
                             )}
 
-                            <TrackOrderForm id={id} />
+                            <TrackOrderForm id={id} setForm={setForm} setOrder={setOrder} />
                         </>
                     )}
 
-                    {orderStatus === 'found' && order && (
+                    {order?.status === 'found' && order && (
                         <div className="text-white">
                             <p className="text-lg font-bold">Order Details</p>
                             <p>Order Number: {order.orderNumber}</p>
