@@ -95,7 +95,6 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
                             value={formData.country?.name ?? ''}
                             onChange={handleInputChange}
                             className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors.country ? 'outline-red-500' : 'outline-gray-300'} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 h-[35px]`}
-                            autoFocus
                         >
                             <option value="">Select Country</option>
                             {countries.map((country) => (
@@ -155,6 +154,7 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
                     onChange={handleInputChange}
                     placeholder="IMEI Number"
                     className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors.imei ? 'outline-red-500' : 'outline-gray-300'} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 h-[35px]`}
+                    autoFocus
                 />
 
                 {errors.imei && (
@@ -175,14 +175,14 @@ function IMEIForm({ form, setForm, setShowPaymentForm }) {
 
             {/* Reset form link */}
             {(formData.country.name !== '' || formData.network !== '' || formData.imei !== '') && (
-                <a
-                    href="#"
+                <button
+                    type="button"
                     onClick={handleResetForm}
-                    className="text-red-600 hover:text-red-700 mt-2 block text-center text-xs"
+                    className="text-red-600 hover:text-red-700 mt-2 block text-xs mx-auto"
                     title="Reset"
                 >
                     Reset
-                </a>
+                </button>
             )}
         </form>
     )
