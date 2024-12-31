@@ -37,7 +37,7 @@ export default async function RootLayout({ children }) {
         <div
           className="mx-auto"
           style={{
-            background: 'linear-gradient(30deg, rgba(82, 109, 255, 0.9) 0%, rgba(118, 82, 165, 1) 100%)',
+            background: 'linear-gradient(45deg, rgba(118, 82, 165, 1) 26%, rgba(103, 120, 222, 1) 42%, rgba(186, 137, 182, 1) 62%, rgba(254, 150, 149, 1) 78%)',
           }}
         >
           <div className="w-full mx-auto">
